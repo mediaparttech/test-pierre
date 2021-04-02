@@ -1,0 +1,262 @@
+<div class="blogs__body__center splitter is-vertical">
+    <div class="splitter__first">
+      {# CONTENT BODY – tools top #}
+      <div class="blogs__body__center__tools-top">
+        <div class="splitter py-500 py-600-lg">
+          <div class="splitter__first">
+            <a href="#" class="action-link is-small">
+              {{ macros.icon('alert') }}
+              <span class="is-hidden-xs">Signaler</span>
+            </a>
+            <a href="#" class="action-link is-small">
+              {{ macros.icon('prints') }}
+              <span class="is-hidden-xs">Imprimer</span>
+            </a>
+          </div>
+          <div class="splitter__last">
+            <a href="#" class="action-link is-small has-no-text mr-400" href="#" target="_blank" rel="noopener">
+              {{ macros.icon('facebook') }}
+            </a>
+            <a href="#" class="action-link is-small has-no-text" href="#" target="_blank" rel="noopener">
+              {{ macros.icon('twitter') }}
+            </a>
+          </div>
+        </div>
+      </div>
+      {# CONTENT BODY – article #}
+      <div class="blogs__body__center__article rich-text rich-text--blogs text content-body-news-02 mt-600">
+        {# title #}
+        <h3 class="inter-titre-gris">Monsieur le Président de la République,</h3>
+        {# subtitle #}
+        <h4 class="titre-gras-rouge-petite-cap">Mon allocution</h4>
+        {# paragraph #}
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+        {# paragraph with bold #}
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des <b>messageries instantanées</b> pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+        {# paragraph with bold #}
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des <a href="https://www.mediapart.fr">https://www.mediapart.fr</a> pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+        {# paragraph with underline #}
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de <u>texte collaboratifs</u> pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+        {# paragraph with blue color #}
+        <p><span class="titre-gras-bleu-petite-cap">Texte en exergue Ils et elles parlent au nom de toute la culture et de tous les arts mais oublient dans leur lutte les peintres, sculpteurs·trices, performers, auteur·e·s du livre, plasticien·ne·s, graphistes, illustrateurs·trices, photographes, commissaires d’expositions, etc.</span></p>
+        {# paragraph with italic #}
+        <p><i>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</i></p>
+        {# paragraph with strikeout #}
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de <del>texte collaboratifs</del> pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+        {# non orderer list #}
+        <ul>
+          <li>le droit d’avoir un nom, une nationalité, une identité</li>
+          <li>le droit d’être soigné, protégé des maladies, d’avoir une alimentation suffisante et équilibrée</li>
+          <li>le droit d’aller à l’école</li>
+          <li>le droit d’être protégé de la violence, de la maltraitance et de toute forme d’abus et d’exploitation</li>
+          <li>Le droit d’être protégé contre toutes les formes de discrimination</li>
+        </ul>
+        {# orderer list #}
+        <ol>
+          <li>le droit d’avoir un nom, une nationalité, une identité</li>
+          <li>le droit d’être soigné, protégé des maladies, d’avoir une alimentation suffisante et équilibrée</li>
+          <li>le droit d’aller à l’école</li>
+          <li>le droit d’être protégé de la violence, de la maltraitance et de toute forme d’abus et d’exploitation</li>
+          <li>Le droit d’être protégé contre toutes les formes de discrimination</li>
+        </ol>
+        {# separator #}
+        <hr>
+
+        {# media image #}
+        <figure class="media--image format-100-pcent">
+          <img src="{{ article.image_v.src }}" alt="{{ article.image_v.alt }}">
+          <figcaption class="legend">une image verticale à 100%</figcaption>
+        </figure>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt adipisci nobis aliquid porro, laborum perspiciatis quasi voluptatibus possimus magnam deserunt vel dignissimos ratione alias cum eum, similique iusto, dolor recusandae.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quia deserunt ut enim blanditiis. Maxime consectetur nihil non fugiat, deserunt eius officia architecto necessitatibus officiis et beatae, ea consequatur iste!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae eos rem cum voluptate velit architecto, expedita ullam id dolorum, accusantium adipisci veniam? Voluptas at doloribus tenetur ullam doloremque maiores!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae eos rem cum voluptate velit architecto, expedita ullam id dolorum, accusantium adipisci veniam? Voluptas at doloribus tenetur ullam doloremque maiores!</p>
+
+        {# media image #}
+        <figure class="media--image format-100-pcent">
+          <img src="{{ article.image_h.src }}" class="preview" alt="wallpaper-3">
+          <figcaption class="legend">une image horizontale à 100%</figcaption>
+        </figure>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt adipisci nobis aliquid porro, laborum perspiciatis quasi voluptatibus possimus magnam deserunt vel dignissimos ratione alias cum eum, similique iusto, dolor recusandae.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quia deserunt ut enim blanditiis. Maxime consectetur nihil non fugiat, deserunt eius officia architecto necessitatibus officiis et beatae, ea consequatur iste!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae eos rem cum voluptate velit architecto, expedita ullam id dolorum, accusantium adipisci veniam? Voluptas at doloribus tenetur ullam doloremque maiores!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae eos rem cum voluptate velit architecto, expedita ullam id dolorum, accusantium adipisci veniam? Voluptas at doloribus tenetur ullam doloremque maiores!</p>
+
+        {# media image #}
+        <figure class="media--image format-66-pcent">
+          <img src="{{ article.image_h.src }}" class="preview" alt="wallpaper-3">
+          <figcaption class="legend">une image horizontale à 66%</figcaption>
+        </figure>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt adipisci nobis aliquid porro, laborum perspiciatis quasi voluptatibus possimus magnam deserunt vel dignissimos ratione alias cum eum, similique iusto, dolor recusandae.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quia deserunt ut enim blanditiis. Maxime consectetur nihil non fugiat, deserunt eius officia architecto necessitatibus officiis et beatae, ea consequatur iste!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae eos rem cum voluptate velit architecto, expedita ullam id dolorum, accusantium adipisci veniam? Voluptas at doloribus tenetur ullam doloremque maiores!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae eos rem cum voluptate velit architecto, expedita ullam id dolorum, accusantium adipisci veniam? Voluptas at doloribus tenetur ullam doloremque maiores!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae eos rem cum voluptate velit architecto, expedita ullam id dolorum, accusantium adipisci veniam? Voluptas at doloribus tenetur ullam doloremque maiores!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae eos rem cum voluptate velit architecto, expedita ullam id dolorum, accusantium adipisci veniam? Voluptas at doloribus tenetur ullam doloremque maiores!</p>
+
+        {# media image #}
+        <figure class="media--image format-50-pcent">
+          <img src="{{ article.image_h.src }}" class="preview" alt="wallpaper-3">
+          <figcaption class="legend">une image horizontale à 50%</figcaption>
+        </figure>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt adipisci nobis aliquid porro, laborum perspiciatis quasi voluptatibus possimus magnam deserunt vel dignissimos ratione alias cum eum, similique iusto, dolor recusandae.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quia deserunt ut enim blanditiis. Maxime consectetur nihil non fugiat, deserunt eius officia architecto necessitatibus officiis et beatae, ea consequatur iste!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae eos rem cum voluptate velit architecto, expedita ullam id dolorum, accusantium adipisci veniam? Voluptas at doloribus tenetur ullam doloremque maiores!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae eos rem cum voluptate velit architecto, expedita ullam id dolorum, accusantium adipisci veniam? Voluptas at doloribus tenetur ullam doloremque maiores!</p>
+
+        {# media image #}
+        <figure class="media--image format-33-pcent">
+          <img src="{{ article.image_v.src }}" align="left" class="preview" alt="wallpaper-3">
+          <figcaption class="legend">une image horizontale à 33%</figcaption>
+        </figure>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt adipisci nobis aliquid porro, laborum perspiciatis quasi voluptatibus possimus magnam deserunt vel dignissimos ratione alias cum eum, similique iusto, dolor recusandae.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quia deserunt ut enim blanditiis. Maxime consectetur nihil non fugiat, deserunt eius officia architecto necessitatibus officiis et beatae, ea consequatur iste!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae eos rem cum voluptate velit architecto, expedita ullam id dolorum, accusantium adipisci veniam? Voluptas at doloribus tenetur ullam doloremque maiores!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae eos rem cum voluptate velit architecto, expedita ullam id dolorum, accusantium adipisci veniam? Voluptas at doloribus tenetur ullam doloremque maiores!</p>
+
+        {# media document #}
+        <a href="#" target="_blank" class="button is-secondary">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <use href="#icon-download"></use>
+            </svg>
+            <span>mon super document (pdf - 1.5mo)</span>
+        </a>
+
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+
+        {# media audio #}
+        <figure class="media--audio">
+            <figcaption class="mb-400"><b class="mr-400">Media audio</b>Media author</figcaption>
+            <audio controls preload="auto">
+                <source src="#" type="audio/mp3" />
+            </audio>
+        </figure>
+
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+
+        {# media video Vimeo #}
+        <figure class="media--video media--video-vimeo">
+          <div class="media--video__iframe-wrapper">
+            <iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F496843494%3Fapp_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F496843494&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1028280105_1280.jpg&key=fbab48d0309b4a55bd8c1874098bbfc1&type=text%2Fhtml&schema=vimeo" width="1920" height="804" scrolling="no" title="Vimeo embed" frameborder="0" allow="autoplay; fullscreen"></iframe>
+          </div>
+          <figcaption class="legend">media video Vimeo</figcaption>
+        </figure>
+
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+
+        {# media video Youtube #}
+        <figure class="media--video media--video-youtube">
+          <div class="media--video__iframe-wrapper">
+            <iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDb4W4e35nrA%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDb4W4e35nrA&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDb4W4e35nrA%2Fhqdefault.jpg&amp;key=fbab48d0309b4a55bd8c1874098bbfc1&amp;type=text%2Fhtml&amp;schema=youtube" width="854" height="480" scrolling="no" title="YouTube embed" frameborder="0" allow="autoplay; fullscreen"></iframe>
+          </div>
+          <figcaption class="legend">media video Youtube</figcaption>
+        </figure>
+
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+
+        {# media video Dailymotion #}
+        <figure class="media--video media--video-dailymotion">
+          <div class="media--video__iframe-wrapper">
+            <iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.dailymotion.com%2Fembed%2Fvideo%2Fx7yxty2&amp;display_name=Dailymotion&amp;url=https%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fx7yxty2&amp;image=https%3A%2F%2Fs2.dmcdn.net%2Fv%2FSkVFQ1W4IWfO6O0Ve%2Fx120&amp;key=fbab48d0309b4a55bd8c1874098bbfc1&amp;type=text%2Fhtml&amp;schema=dailymotion" width="480" height="204" scrolling="no" title="Dailymotion embed" frameborder="0" allow="autoplay; fullscreen"></iframe>
+          </div>
+          <figcaption class="legend">media video Dailymotion</figcaption>
+        </figure>
+
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+
+        {# media rich SoundCloud #}
+        <figure class="media--rich media--rich-soundcloud">
+            <div class="media--rich__iframe-wrapper" style="padding-top: 100%">
+              <iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fw.soundcloud.com%2Fplayer%2F%3Fvisual%3Dtrue%26url%3Dhttps%253A%252F%252Fapi.soundcloud.com%252Ftracks%252F971467531%26show_artwork%3Dtrue&amp;display_name=SoundCloud&amp;url=https%3A%2F%2Fsoundcloud.com%2Fnew-lit-music%2Fkodak-black-last-day-in&amp;image=https%3A%2F%2Fi1.sndcdn.com%2Fartworks-lDdzyB3y56vp15wu-Y8Phug-t500x500.jpg&amp;key=fbab48d0309b4a55bd8c1874098bbfc1&amp;type=text%2Fhtml&amp;schema=soundcloud" width="500" height="500" scrolling="no" title="SoundCloud embed" frameborder="0" allow="autoplay; fullscreen"></iframe>
+            </div>
+            <figcaption class="legend">media rich SoundCloud</figcaption>
+        </figure>
+
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+
+        {# media rich Spotify #}
+        <figure class="media--rich media--rich-spotify">
+            <div class="media--rich__iframe-wrapper" style="padding-top: 126%">
+              <iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fopen.spotify.com%2Fembed%2Ftrack%2F6vIKb7bsT7FBrD2ZlvoyfU&amp;display_name=Spotify&amp;url=https%3A%2F%2Fopen.spotify.com%2Ftrack%2F6vIKb7bsT7FBrD2ZlvoyfU&amp;image=https%3A%2F%2Fi.scdn.co%2Fimage%2Fab67616d00001e02c2fef1ee547d951bb155eead&amp;key=fbab48d0309b4a55bd8c1874098bbfc1&amp;type=text%2Fhtml&amp;schema=spotify" width="300" height="380" scrolling="no" title="Spotify embed" frameborder="0" allow="autoplay; fullscreen"></iframe>
+            </div>
+            <figcaption class="legend">media rich Spotify</figcaption>
+        </figure>
+
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+
+        {# media rich Scribd #}
+        <figure class="media--rich media--rich-scribd">
+            <div class="media--rich__iframe-wrapper" style="padding-top: 133%">
+              <iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.scribd.com%2Fembeds%2F64694445%2Fcontent&amp;display_name=Scribd&amp;url=https%3A%2F%2Fwww.scribd.com%2Fdoc%2F64694445%2FRapport-Cour-Comptes-CFE&amp;image=https%3A%2F%2Fimgv2-2-f.scribdassets.com%2Fimg%2Fdocument%2F64694445%2F111x142%2F53f2ee0707%2F1611579653%3Fv%3D1&amp;key=fbab48d0309b4a55bd8c1874098bbfc1&amp;type=text%2Fhtml&amp;schema=scribd" width="600" height="800" scrolling="no" title="Scribd embed" frameborder="0" allow="autoplay; fullscreen"></iframe>
+            </div>
+            <figcaption class="legend">media rich Scribd</figcaption>
+        </figure>
+
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+
+        {# media rich Slideshare #}
+        <figure class="media--rich media--rich-slideshare">
+            <div class="media--rich__iframe-wrapper" style="padding-top: 83%">
+              <iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.slideshare.net%2Fslideshow%2Fembed_code%2Fkey%2FlZy0Xk9V0AX8ek&amp;display_name=SlideShare&amp;url=https%3A%2F%2Fwww.slideshare.net%2Fuschamber%2F021842-slideshare-earlyvotingfin&amp;image=https%3A%2F%2Fcdn.slidesharecdn.com%2Fss_thumbnails%2F021842slideshareearlyvotingfin-141028105405-conversion-gate02-thumbnail-4.jpg%3Fcb%3D1414496960&amp;key=fbab48d0309b4a55bd8c1874098bbfc1&amp;type=text%2Fhtml&amp;schema=slideshare" width="600" height="500" scrolling="no" title="SlideShare embed" frameborder="0" allow="autoplay; fullscreen"></iframe>
+            </div>
+            <figcaption class="legend">media rich Slideshare</figcaption>
+        </figure>
+
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+
+        {# media rich DocumentCloud #}
+        <figure class="media--rich media--rich-documentcloud">
+            <div class="media--rich__iframe-wrapper" style="padding-top: 135%">
+              <iframe src="//www.documentcloud.org/documents/3525320-801606CJT-PROPOSITION-BAT-81-97.html?embed=true&amp;responsive=true&amp;sidebar=false" title="801606CJT PROPOSITION BAT 81 97 (Hosted by DocumentCloud)" sandbox="allow-scripts allow-same-origin allow-popups allow-forms" frameborder="0"></iframe>
+            </div>
+            <figcaption class="legend">media rich DocumentCloud</figcaption>
+        </figure>
+
+        <p>Nous avons tous les outils pour nous organiser. Des médias en ligne de qualité, des messageries instantanées pour communiquer, des éditeurs de texte collaboratifs pour poser nos idées. Prendre le temps de la réflexion, parce que c'est bien trop souvent cela qu'il nous manque. Et puis pourquoi pas aller plus loin : utiliser les logiciels gratuits pour dessiner, les caméras dans nos poches, les micros sous nos doigts et des réseaux sociaux pour diffuser tout cela.</p>
+
+      </div>
+    </div>
+    <div class="splitter__last">
+      {# CONTENT BODY – tools bottom #}
+      <div class="blogs__body__center__tools-bottom mt-700 pb-500">
+        <div class="splitter">
+          <div class="splitter__first">
+            <a href="#" class="action-link is-small">
+              {{ macros.icon('recommend') }}
+              <span>Recommander ({{ article.recommendNumber }})</span>
+            </a>
+          </div>
+          <div class="splitter__last">
+            <a href="#" class="action-link is-small has-no-text mr-400" href="#" target="_blank" rel="noopener">
+              {{ macros.icon('facebook') }}
+            </a>
+            <a href="#" class="action-link is-small has-no-text" href="#" target="_blank" rel="noopener">
+              {{ macros.icon('twitter') }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

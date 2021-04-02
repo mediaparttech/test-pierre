@@ -1,0 +1,23 @@
+// Color
+// ––––––––––––––––––––––
+
+// Background
+@each $name, $color in $background-colors {
+  .#{$name} {
+    background-color: $color !important;
+  }
+}
+
+// Text
+@each $name, $color in $text-colors {
+  .#{$name} {
+    color: $color !important;
+  }
+}
+
+// UI
+@each $name, $color in $ui-colors {
+  .#{$name} {
+    color: $color !important;
+  }
+}

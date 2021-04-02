@@ -1,0 +1,89 @@
+{# ARTICLE PATTERN #}
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top grid">
+      <div class="footer__newsletter-cta">
+        <div>
+          <div class="heading-product-02">Newsletters</div>
+          <p class="ui-body-product-02">Recevez chaque jour les titres à la Une</p>
+        </div>
+        <a href="#" class="button is-secondary-invert is-small">
+          <span>Inscrivez-vous</span>
+        </a>
+      </div>
+      <div class="footer__social-cta">
+        {% for name, url in social_medias %}
+          <a href="{{ url }}" target="_blank" rel="noopener" aria-label="{{ name }}">
+            {{ macros.icon(name) }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="footer__middle grid">
+      <div class="footer__links-list">
+        <h4>Le Journal</h4>
+        <a href="#">International</a>
+        <a href="#">France</a>
+        <a href="#">Economie</a>
+        <a href="#">Culture</a>
+        <a href="#">Dossiers</a>
+        <a href="#">Fils d’actuadivtés</a>
+        <a href="#">Journal imprimé</a>
+      </div>
+      <div class="footer__links-list">
+        <h4>Le Studio</h4>
+        <a href="#">Vidéos</a>
+        <a href="#">Podcasts</a>
+        <a href="#">Documentaires</a>
+        <a href="#">Portfodivos</a>
+        <a href="#">Panoramiques</a>
+      </div>
+      <div class="footer__links-list">
+        <h4>Le Club</h4>
+        <a href="#">Depuis 48 heures</a>
+        <a href="#">Les blogs</a>
+        <a href="#">Les éditions</a>
+        <a href="#">L’agenda</a>
+        <a href="#">La charte</a>
+        <a href="#">Participez</a>
+      </div>
+      <div class="footer__links-list">
+        <h4>À Propos</h4>
+        <a href="#">Qui sommes-nous ?</a>
+        <a href="#">Besoin d’aide ?</a>
+        <a href="#">Nous contacter</a>
+        <a href="#">Plan du site</a>
+        <a href="#">Recrutement</a>
+        <a href="#">Frenchleack</a>
+      </div>
+      <div class="footer__app-cta">
+        <div class="footer__app-cta-badges">
+          <a href="#"><img src="~images/common/google-play-badge.png" alt=""></a>
+          <a href="#"><img src="~images/common/app-store-badge.png" alt=""></a>
+        </div>
+        <div class="footer__app-cta-phone is-hidden-until-lg">
+          <img src="~images/common/mediapart-app.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom--links ui-body-product-01">
+        <span>
+          <a class="footer__bottom--link" href="#">Mentions légales</a>
+          <a class="footer__bottom--link" href="#">Charte de déontologie</a>
+        </span>
+        <span>
+          <a class="footer__bottom--link" href="#">Charte de participation</a>
+          <a class="footer__bottom--link" href="#">CGV</a>
+        </span>
+        <span>
+          <a class="footer__bottom--link" href="#">Confidentiadivté</a>
+          <button class="footer__bottom--link">Gestion des cookies</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>

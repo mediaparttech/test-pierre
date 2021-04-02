@@ -1,0 +1,86 @@
+// Dropdown
+// ––––––––––––––––––––––
+
+.dropdown {
+  position: relative;
+  display: inline-flex;
+
+  &:hover > .dropdown-menu,
+  &:focus-within > .dropdown-menu,
+  .dropdown-menu:hover,
+  .dropdown-menu:focus {
+    display: flex;
+  }
+
+  &-menu {
+    @include box-shadow-large;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: $zindex-modal;
+    display: none;
+    flex-direction: column;
+    min-width: 210px;
+    padding: $spacing-200;
+    margin-top: $spacing-400;
+    background-color: $white;
+    border-radius: $border-radius-large;
+
+    &::before {
+      position: absolute;
+      top: -$spacing-400;
+      left: 0;
+      width: 100%;
+      height: $spacing-400;
+      content: '';
+    }
+  }
+
+  &-item {
+    @extend .ui-body-product-02;
+
+    display: inline-flex;
+    align-items: center;
+    padding: $spacing-200 $spacing-400;
+    color: $neutral-700;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: $border-radius-medium;
+    outline: none;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+
+    &:hover,
+    &:focus-within,
+    &.is-active {
+      color: $neutral-900;
+      background-color: $neutral-100;
+    }
+
+    &.dropdown-item--product {
+      color: $product-700;
+
+      &:hover,
+      &:focus-within,
+      &.is-active {
+        color: $product-500;
+        background-color: $product-100;
+      }
+    }
+
+    .icon {
+      width: $line-height-210;
+      height: $line-height-210;
+      margin-right: $spacing-200;
+    }
+  }
+
+  &-divider {
+    display: block;
+    height: 1px;
+    margin: $spacing-200 -#{$spacing-200};
+    background-color: $neutral-200;
+    border: none;
+  }
+}

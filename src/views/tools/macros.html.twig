@@ -1,0 +1,13 @@
+{% macro icon(name, class) %}
+  <svg class="icon{{ class ? ' ' ~ class }}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <use href="#icon-{{ name }}"></use>
+  </svg>
+{% endmacro %}
+
+{% macro image(image, class) %}
+<div class="image{{ class ? ' ' ~ class }}">
+  <img class="lazyload" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 {{ image.width }} {{ image.height }}'%3E%3C/svg%3E" data-src="{{ image.src }}" alt="{{ image.alt }}">
+  <div class="image-fallback"></div>
+  <noscript><img src="{{ image.src }}" alt="{{ image.alt }}"></noscript>
+</div>
+{% endmacro %}

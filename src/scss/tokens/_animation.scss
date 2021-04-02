@@ -1,0 +1,18 @@
+// Animation
+// ––––––––––––––––––––––
+
+// Speed
+
+$animation-speed-fastest: 160ms;
+$animation-speed-fast: 240ms;
+$animation-speed-normal: 320ms;
+$animation-speed-slow: 400ms;
+$animation-speed-slowest: 600ms;
+
+// Easing
+
+$animation-curve-ease-in-out: ease-in-out;
+$animation-curve-ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$animation-curve-ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+$animation-curve-ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$animation-curve-decelerate: cubic-bezier(0, 0, 0.16, 1);

@@ -1,0 +1,485 @@
+// Type
+// ––––––––––––––––––––––
+
+// Heading - Product
+
+@mixin heading-product-11 {
+  font-family: $font-family-product;
+  font-size: $font-size-650;
+  font-weight: $font-weight-700;
+  line-height: $line-height-500;
+  letter-spacing: $letter-spacing-condensed;
+}
+
+@mixin heading-product-10 {
+  font-family: $font-family-product;
+  font-size: $font-size-470;
+  font-weight: $font-weight-700;
+  line-height: $line-height-500;
+  letter-spacing: $letter-spacing-condensed;
+}
+
+@mixin heading-product-09 {
+  font-family: $font-family-product;
+  font-size: $font-size-350;
+  font-weight: $font-weight-700;
+  line-height: $line-height-380;
+  letter-spacing: $letter-spacing-condensed;
+}
+
+@mixin heading-product-08 {
+  font-family: $font-family-product;
+  font-size: $font-size-350;
+  font-weight: $font-weight-500;
+  line-height: $line-height-380;
+  letter-spacing: $letter-spacing-condensed;
+}
+
+@mixin heading-product-07 {
+  font-family: $font-family-product;
+  font-size: $font-size-280;
+  font-weight: $font-weight-700;
+  line-height: $line-height-330;
+  letter-spacing: $letter-spacing-condensed;
+}
+
+@mixin heading-product-06 {
+  font-family: $font-family-product;
+  font-size: $font-size-280;
+  font-weight: $font-weight-500;
+  line-height: $line-height-330;
+  letter-spacing: $letter-spacing-condensed;
+}
+
+@mixin heading-product-05 {
+  font-family: $font-family-product;
+  font-size: $font-size-220;
+  font-weight: $font-weight-700;
+  line-height: $line-height-270;
+}
+
+@mixin heading-product-04 {
+  font-family: $font-family-product;
+  font-size: $font-size-220;
+  font-weight: $font-weight-500;
+  line-height: $line-height-270;
+}
+
+@mixin heading-product-03 {
+  font-family: $font-family-product;
+  font-size: $font-size-190;
+  font-weight: $font-weight-500;
+  line-height: $line-height-270;
+}
+
+@mixin heading-product-02 {
+  font-family: $font-family-product;
+  font-size: $font-size-160;
+  font-weight: $font-weight-500;
+  line-height: $line-height-210;
+}
+
+@mixin heading-product-01 {
+  font-family: $font-family-product;
+  font-size: $font-size-130;
+  font-weight: $font-weight-500;
+  line-height: $line-height-160;
+}
+
+.heading-product-11 {
+  @include heading-product-11;
+}
+
+.heading-product-10 {
+  @include heading-product-07;
+
+  @include breakpoint-sm {
+    @include heading-product-09;
+  }
+
+  @include breakpoint-md {
+    @include heading-product-10;
+  }
+}
+
+.heading-product-09 {
+  @include heading-product-07;
+
+  @include breakpoint-md {
+    @include heading-product-09;
+  }
+}
+
+.heading-product-08 {
+  @include heading-product-08;
+}
+
+.heading-product-07 {
+  @include heading-product-07;
+}
+
+.heading-product-06 {
+  @include heading-product-06;
+}
+
+.heading-product-05 {
+  @include heading-product-05;
+}
+
+.heading-product-04 {
+  @include heading-product-04;
+}
+
+.heading-product-03 {
+  @include heading-product-03;
+}
+
+.heading-product-02 {
+  @include heading-product-02;
+}
+
+.heading-product-01 {
+  @include heading-product-01;
+}
+
+// Heading - News
+
+@mixin heading-news-12 {
+  font-family: $font-family-news;
+  font-size: $font-size-650;
+  font-weight: $font-weight-700;
+  line-height: $line-height-670;
+  letter-spacing: $letter-spacing-condensed;
+}
+
+@mixin heading-news-09 {
+  font-family: $font-family-news;
+  font-size: $font-size-410;
+  font-weight: $font-weight-700;
+  line-height: $line-height-410;
+  letter-spacing: $letter-spacing-condensed;
+}
+
+@mixin heading-news-08 {
+  font-family: $font-family-news;
+  font-size: $font-size-350;
+  font-weight: $font-weight-700;
+  line-height: $line-height-330;
+  letter-spacing: $letter-spacing-condensed;
+}
+
+@mixin heading-news-06 {
+  font-family: $font-family-news;
+  font-size: $font-size-280;
+  font-weight: $font-weight-700;
+  line-height: $line-height-270;
+}
+
+@mixin heading-news-04 {
+  font-family: $font-family-news;
+  font-size: $font-size-220;
+  font-weight: $font-weight-700;
+  line-height: $line-height-270;
+}
+
+@mixin heading-news-03 {
+  font-family: $font-family-news;
+  font-size: $font-size-190;
+  font-weight: $font-weight-700;
+  line-height: $line-height-210;
+}
+
+@mixin heading-news-02 {
+  font-family: $font-family-news;
+  font-size: $font-size-160;
+  font-weight: $font-weight-700;
+  line-height: $line-height-210;
+}
+
+.heading-news-12 {
+  @include heading-news-08;
+
+  @include breakpoint-sm {
+    @include heading-news-09;
+  }
+
+  @include breakpoint-lg {
+    @include heading-news-12;
+  }
+}
+
+.heading-news-09 {
+  @include heading-news-09;
+}
+
+.heading-news-08 {
+  @include heading-news-08;
+}
+
+.heading-news-06 {
+  @include heading-news-06;
+}
+
+.heading-news-04 {
+  @include heading-news-04;
+}
+
+.heading-news-03 {
+  @include heading-news-04;
+
+  @include breakpoint-lg {
+    @include heading-news-03;
+  }
+}
+
+.heading-news-02 {
+  @include heading-news-02;
+}
+
+// Heading - Market
+
+@mixin heading-market-10 {
+  font-family: $font-family-market;
+  font-size: $font-size-470;
+  font-weight: $font-weight-900;
+  line-height: $line-height-500;
+}
+
+@mixin heading-market-09 {
+  font-family: $font-family-market;
+  font-size: $font-size-380;
+  font-weight: $font-weight-900;
+  line-height: $line-height-380;
+}
+
+.heading-market-10 {
+  @include heading-market-09;
+
+  @include breakpoint-md {
+    @include heading-market-10;
+  }
+}
+
+// Subheading - Product
+
+@mixin subheading-product-02 {
+  font-family: $font-family-product;
+  font-size: $font-size-220;
+  font-weight: $font-weight-400;
+  line-height: $line-height-330;
+}
+
+@mixin subheading-product-01 {
+  font-family: $font-family-product;
+  font-size: $font-size-190;
+  font-weight: $font-weight-400;
+  line-height: $line-height-270;
+}
+
+.subheading-product-02 {
+  @include subheading-product-01;
+
+  @include breakpoint-md {
+    @include subheading-product-02;
+  }
+}
+
+.subheading-product-01 {
+  @include subheading-product-01;
+}
+
+// Subheading - News
+
+@mixin subheading-news-01 {
+  font-family: $font-family-news;
+  font-size: $font-size-160;
+  font-weight: $font-weight-400;
+  line-height: $line-height-210;
+}
+
+.subheading-news-01 {
+  @include subheading-news-01;
+}
+
+// Content - News
+
+@mixin content-body-news-12 {
+  font-family: $font-family-news;
+  font-size: $font-size-900;
+  font-weight: $font-weight-500;
+  line-height: $line-height-670;
+  letter-spacing: $letter-spacing-condensed;
+}
+
+@mixin content-body-news-09 {
+  font-family: $font-family-news;
+  font-size: $font-size-350;
+  font-weight: $font-weight-400;
+  line-height: $line-height-380;
+}
+
+@mixin content-body-news-08 {
+  font-family: $font-family-news;
+  font-size: $font-size-250;
+  font-weight: $font-weight-400;
+  line-height: $line-height-270;
+}
+
+@mixin content-body-news-03 {
+  font-family: $font-family-news;
+  font-size: $font-size-220;
+  font-weight: $font-weight-400;
+  line-height: $line-height-270;
+}
+
+@mixin content-body-news-02 {
+  font-family: $font-family-news;
+  font-size: $font-size-220;
+  font-weight: $font-weight-400;
+  line-height: $line-height-330;
+}
+
+@mixin content-body-news-01 {
+  font-family: $font-family-news;
+  font-size: $font-size-190;
+  font-weight: $font-weight-400;
+  line-height: $line-height-270;
+}
+
+@mixin content-title-news-02 {
+  font-family: $font-family-news;
+  font-size: $font-size-250;
+  font-weight: $font-weight-700;
+  line-height: $line-height-330;
+  letter-spacing: $letter-spacing-condensed;
+}
+
+@mixin content-title-news-01 {
+  font-family: $font-family-news;
+  font-size: $font-size-220;
+  font-weight: $font-weight-700;
+  line-height: $line-height-270;
+}
+
+.content-body-news-12 {
+  @include content-body-news-12;
+}
+
+.content-body-news-09 {
+  @include content-body-news-08;
+
+  @include breakpoint-lg {
+    @include content-body-news-09;
+  }
+}
+
+.content-body-news-08 {
+  @include content-body-news-03;
+
+  @include breakpoint-sm {
+    @include content-body-news-08;
+  }
+}
+
+.content-body-news-03 {
+  @include content-body-news-03;
+}
+
+.content-body-news-02 {
+  @include content-body-news-01;
+
+  @include breakpoint-sm {
+    @include content-body-news-02;
+  }
+}
+
+.content-body-news-01 {
+  @include content-body-news-01;
+}
+
+.content-title-news-02 {
+  @include content-title-news-01;
+
+  @include breakpoint-md {
+    @include content-title-news-02;
+  }
+}
+
+.content-title-news-01 {
+  @include content-title-news-01;
+}
+
+// UI - Product
+
+@mixin ui-body-product-02 {
+  font-family: $font-family-product;
+  font-size: $font-size-160;
+  font-weight: $font-weight-400;
+  line-height: $line-height-210;
+}
+
+@mixin ui-body-product-01 {
+  font-family: $font-family-product;
+  font-size: $font-size-130;
+  font-weight: $font-weight-400;
+  line-height: $line-height-160;
+}
+
+@mixin ui-small-product-01 {
+  font-family: $font-family-product;
+  font-size: $font-size-100;
+  font-weight: $font-weight-400;
+  line-height: $line-height-100;
+}
+
+@mixin ui-label-product-03 {
+  font-family: $font-family-product;
+  font-size: $font-size-130;
+  font-weight: $font-weight-500;
+  line-height: $line-height-160;
+  letter-spacing: $letter-spacing-large;
+}
+
+@mixin ui-label-product-02 {
+  font-family: $font-family-product;
+  font-size: $font-size-100;
+  font-weight: $font-weight-500;
+  line-height: $line-height-100;
+  letter-spacing: $letter-spacing-large;
+}
+
+@mixin ui-label-product-01 {
+  font-family: $font-family-product;
+  font-size: $font-size-100;
+  font-weight: $font-weight-400;
+  line-height: $line-height-100;
+  letter-spacing: $letter-spacing-large;
+}
+
+.ui-body-product-02 {
+  @include ui-body-product-02;
+}
+
+.ui-body-product-01 {
+  @include ui-body-product-01;
+}
+
+.ui-small-product-01 {
+  @include ui-small-product-01;
+}
+
+.ui-label-product-03 {
+  @include ui-label-product-02;
+
+  @include breakpoint-md {
+    @include ui-label-product-03;
+  }
+}
+
+.ui-label-product-02 {
+  @include ui-label-product-02;
+}
+
+.ui-label-product-01 {
+  @include ui-label-product-01;
+}

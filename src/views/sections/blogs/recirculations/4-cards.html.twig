@@ -1,0 +1,16 @@
+<div class="blogs__recirculation">
+  <p class="heading-product-09 mb-400">Sur le même thème</p>
+  <div class="grid">
+    {% for article in article.recirculations %}
+      <div class="blogs__recirculation__article">
+        <p class="ui-label-product-01 text mb-400">
+          <span class="{{ article.category == 'ABONNÉS' ? 'text-accent' : 'text-product-accent' }}">{{ article.category }}</span>
+          <a href="#" class="ml-200">{{ article.subCategory }}</a>
+        </p>
+        <a href="#" class="{{ article.category == 'ABONNÉS' ? 'heading-news-04 ' : 'heading-product-04 ' }}text mb-400">{{ article.title }}</a>
+        <p class="subheading-news-01 text-secondary mb-400">{{ article.summary }}</p>
+        <a href="#" class="ui-body-product-01 text-light">{{ article.author }}</a>
+      </div>
+    {% endfor %}
+  </div>
+</div>

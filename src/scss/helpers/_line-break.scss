@@ -1,0 +1,184 @@
+// Responsive line break
+// ––––––––––––––––––––––
+
+.line-break-sm {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-sm {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.line-break-sm-only {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-sm-only {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.line-break-until-md {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-until-md {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.line-break-md {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-md {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.line-break-md-only {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-md-only {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.line-break-until-lg {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-until-lg {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.line-break-lg {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-lg {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.line-break-lg-only {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-lg-only {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.line-break-until-xl {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-until-xl {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.line-break-xl {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-xl {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.line-break-xl-only {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-xl-only {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.line-break-until-xxl {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-until-xxl {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.line-break-xxl {
+  &::before {
+    content: ' ';
+  }
+
+  @include breakpoint-xxl {
+    display: block;
+
+    &::before {
+      content: none;
+    }
+  }
+}

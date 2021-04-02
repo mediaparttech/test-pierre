@@ -1,0 +1,41 @@
+// Border
+// ––––––––––––––––––––––
+
+$cardinal-directions: (
+  'top': 't',
+  'right': 'r',
+  'bottom': 'b',
+  'left': 'l',
+);
+
+$border-colors: (
+  'light': $ui-stroke-light,
+  'medium': $ui-stroke-medium,
+  'dark': $ui-stroke-dark,
+);
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @if ($breakpoint-value == 0) {
+    @each $color-name, $color-hex in $border-colors {
+      @each $direction-name, $direction-shortname in $cardinal-directions {
+        .border-#{$direction-shortname}-#{$color-name} {
+          border-#{$direction-name}: 1px solid $color-hex;
+        }
+      }
+
+      .border-#{$color-name} {
+        border: 1px solid $color-hex;
+      }
+    }
+  } @else {
+    @media screen and (min-width: $breakpoint-value) {
+      @each $color-name, $color-hex in $border-colors {
+        @each $direction-name, $direction-shortname in $cardinal-directions {
+          .border-#{$direction-shortname}-#{$color-name}-#{$breakpoint-name} {
+            border-#{$direction-name}: $color-hex;
+          }
+        }
+      }
+    }
+  }
+}

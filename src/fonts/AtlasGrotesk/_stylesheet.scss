@@ -1,0 +1,25 @@
+// Atlas Grotesk font is mainly used for the Club and ui
+
+@font-face {
+  font-display: swap;
+  font-family: 'Atlas Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  src: url('AtlasGrotesk-Regular.woff2') format('woff2'), url('AtlasGrotesk-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Atlas Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  src: url('AtlasGrotesk-Medium.woff2') format('woff2'), url('AtlasGrotesk-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Atlas Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  src: url('AtlasGrotesk-Bold.woff2') format('woff2'), url('AtlasGrotesk-Bold.woff') format('woff');
+}

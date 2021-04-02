@@ -1,0 +1,81 @@
+// Pagination
+// ––––––––––––––––––––––
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-previous,
+  &-next,
+  &-link,
+  &-ellipsis {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: $spacing-700;
+    height: $spacing-700;
+    color: $neutral-900;
+    text-align: center;
+    vertical-align: top;
+    user-select: none;
+    outline: none;
+  }
+
+  &-ellipsis,
+  &-link {
+    @extend .ui-body-product-02;
+
+    font-feature-settings: 'tnum' on, 'lnum' on;
+  }
+
+  &-previous,
+  &-next,
+  &-link {
+    border-radius: $border-radius-circle;
+
+    &:hover {
+      //
+    }
+
+    &:focus {
+      //
+    }
+
+    &:active {
+      //
+    }
+
+    &[disabled] {
+      //
+    }
+  }
+
+  &-previous,
+  &-next {
+    border: 1px solid $ui-stroke-dark;
+
+    .icon {
+      font-size: $font-size-280;
+    }
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &-link {
+    &.is-current {
+      color: $white;
+      background-color: $neutral-900;
+    }
+  }
+
+  &-ellipsis {
+    pointer-events: none;
+  }
+}

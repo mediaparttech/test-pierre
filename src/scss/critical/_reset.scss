@@ -1,0 +1,33 @@
+// Reset
+// ––––––––––––––––––––––
+
+@import '~ress';
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+[tabindex='-1'] {
+  outline: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+embed,
+hr,
+iframe,
+object {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}

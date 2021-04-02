@@ -1,0 +1,19 @@
+{% import "@views/tools/macros.html.twig" as macros %}
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, shrink-to-fit=no">
+    <title>Mediapart - Billet de blog</title>
+  </head>
+  <body>
+    {# {% include "@views/tools/grid.html.twig" %} #}
+    {% include "@views/tools/_icons.html.twig" %}
+    {% include "@views/sections/common/patterns/navigation.html.twig" %}
+    {% include "@views/sections/blogs/index.html.twig" %}
+    {% include "@views/sections/common/banners/bottom-banner.html.twig" %}
+    {% include "@views/sections/common/patterns/footer.html.twig" %}
+  </body>
+</html>

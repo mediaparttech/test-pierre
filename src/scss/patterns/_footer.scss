@@ -1,0 +1,280 @@
+// Patterns - Footer
+// ––––––––––––––––––––––
+
+.footer {
+  color: $text-invert;
+  background-color: $background-dark;
+
+  &__top {
+    border-bottom: 1px solid $neutral-700;
+  }
+
+  &__newsletter-cta,
+  &__social-cta {
+    grid-column: 1 / -1;
+  }
+
+  &__newsletter-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: $spacing-600 0;
+
+    @include breakpoint-md {
+      flex-direction: row;
+
+      .button {
+        margin-top: 0;
+      }
+    }
+
+    @include breakpoint-lg {
+      grid-column: span 7;
+    }
+
+    .button {
+      margin-top: $spacing-500;
+    }
+  }
+
+  &__social-cta {
+    display: flex;
+    align-items: center;
+    padding: $spacing-500 0;
+    font-size: $font-size-280;
+    border-top: solid 1px $neutral-700;
+
+    a {
+      @extend %focus;
+
+      &:not(:first-child) {
+        margin-left: $spacing-600;
+      }
+    }
+
+    @include breakpoint-lg {
+      grid-column: span 5;
+      justify-content: flex-end;
+      border-top: 0;
+    }
+  }
+
+  &__middle {
+    margin: $spacing-200 0;
+  }
+
+  &__links-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    margin: $spacing-500 0;
+    font-size: $font-size-130;
+    line-height: $line-height-210;
+
+    h4 {
+      padding-bottom: $spacing-200;
+      margin-top: 0;
+      font-weight: normal;
+      color: $neutral-500;
+    }
+
+    a {
+      @extend %focus;
+    }
+
+    @include breakpoint-sm-only {
+      &:nth-of-type(n + 3)::after {
+        position: absolute;
+        top: #{-1 * $spacing-500};
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        content: '';
+        background-color: $neutral-700;
+      }
+    }
+
+    @include breakpoint-sm {
+      &:nth-of-type(even)::before {
+        position: absolute;
+        top: 0;
+        left: calc(var(--grid-gap) / -2);
+        display: block;
+        width: 1px;
+        height: 100%;
+        content: '';
+        background-color: $neutral-700;
+      }
+    }
+
+    @include breakpoint-md {
+      &:not(:first-child)::before {
+        position: absolute;
+        top: 0;
+        left: calc(var(--grid-gap) / -2);
+        display: block;
+        width: 1px;
+        height: 100%;
+        content: '';
+        background-color: $neutral-700;
+      }
+    }
+  }
+
+  &__app-cta {
+    position: relative;
+    display: flex;
+    grid-column: 1 / -1;
+    align-items: center;
+    margin: $spacing-500 0;
+
+    @include breakpoint-until-sm {
+      justify-content: center;
+    }
+
+    @include breakpoint-until-lg {
+      margin-top: #{$spacing-600 + $spacing-200};
+
+      &::after {
+        position: absolute;
+        top: #{-1 * $spacing-600};
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        content: '';
+        background-color: $neutral-700;
+      }
+    }
+
+    @include breakpoint-lg {
+      flex-direction: column;
+      grid-column: span 4;
+      padding-bottom: 0 !important;
+      border-top: 0;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: calc(var(--grid-gap) / -2);
+        display: block;
+        width: 1px;
+        height: 100%;
+        content: '';
+        background-color: $neutral-700;
+      }
+    }
+
+    @include breakpoint-xxl {
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    &-badges {
+      img {
+        width: 124px;
+        height: 36px;
+      }
+
+      a {
+        @extend %focus;
+
+        display: inline-flex;
+
+        &:last-child {
+          @include breakpoint-until-xxl {
+            margin-left: $spacing-400;
+          }
+
+          @include breakpoint-xxl {
+            margin-top: $spacing-400;
+          }
+        }
+      }
+    }
+
+    &-phone {
+      margin-bottom: -$spacing-600;
+
+      img {
+        flex-shrink: 0;
+        width: 215px;
+        height: 320px;
+        object-fit: contain;
+      }
+
+      @include breakpoint-xxl {
+        margin-left: $spacing-700;
+      }
+
+      @include breakpoint-until-xxl {
+        margin-top: $spacing-500;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: $spacing-500 0;
+    color: $neutral-500;
+    border-top: 1px solid $neutral-700;
+
+    &--links {
+      display: flex;
+      flex-direction: column;
+
+      @include breakpoint-lg {
+        flex-direction: row;
+      }
+    }
+
+    &--link {
+      @extend %focus;
+
+      flex: 1;
+      text-align: left;
+
+      @include breakpoint-until-md {
+        &:not(:first-child) {
+          margin-top: $spacing-400;
+        }
+      }
+
+      @include breakpoint-lg {
+        flex: initial;
+
+        &:not(:first-child) {
+          margin-left: $spacing-600;
+        }
+      }
+    }
+
+    span {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      @include breakpoint-md {
+        flex: 2;
+        flex-direction: row;
+      }
+
+      @include breakpoint-until-lg {
+        &:not(:first-child) {
+          margin-top: $spacing-400;
+        }
+      }
+
+      @include breakpoint-lg {
+        flex: initial;
+
+        &:not(:first-child) {
+          margin-left: $spacing-600;
+        }
+      }
+    }
+  }
+}

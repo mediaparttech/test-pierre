@@ -1,0 +1,203 @@
+// Buttons
+// ––––––––––––––––––––––
+
+$buttons-config: (
+  primary: (
+    color_default: $white,
+    color_hover: $white,
+    color_active: $white,
+    color_focus: $white,
+    background_color_default: $neutral-900,
+    background_color_hover: $neutral-700,
+    background_color_active: $neutral-600,
+    background_color_focus: $neutral-900,
+    border_color_default: transparent,
+    border_color_hover: transparent,
+    border_color_active: transparent,
+    border_color_focus: transparent,
+  ),
+  secondary: (
+    color_default: $neutral-900,
+    color_hover: $neutral-700,
+    color_active: $neutral-600,
+    color_focus: $neutral-900,
+    background_color_default: $white,
+    background_color_hover: $white,
+    background_color_active: $white,
+    background_color_focus: $white,
+    border_color_default: $neutral-900,
+    border_color_hover: $neutral-700,
+    border_color_active: $neutral-600,
+    border_color_focus: $neutral-900,
+  ),
+  primary-invert: (
+    color_default: $neutral-900,
+    color_hover: $neutral-900,
+    color_active: $neutral-900,
+    color_focus: $neutral-900,
+    background_color_default: $white,
+    background_color_hover: $neutral-100,
+    background_color_active: $neutral-200,
+    background_color_focus: $white,
+    border_color_default: transparent,
+    border_color_hover: transparent,
+    border_color_active: transparent,
+    border_color_focus: transparent,
+  ),
+  secondary-invert: (
+    color_default: $white,
+    color_hover: $neutral-100,
+    color_active: $neutral-200,
+    color_focus: $white,
+    background_color_default: transparent,
+    background_color_hover: transparent,
+    background_color_active: transparent,
+    background_color_focus: transparent,
+    border_color_default: $white,
+    border_color_hover: $neutral-100,
+    border_color_active: $neutral-200,
+    border_color_focus: $white,
+  ),
+  club-primary: (
+    color_default: $white,
+    color_hover: $white,
+    color_active: $white,
+    color_focus: $white,
+    background_color_default: $product-500,
+    background_color_hover: $product-600,
+    background_color_active: $product-700,
+    background_color_focus: $product-500,
+    border_color_default: transparent,
+    border_color_hover: transparent,
+    border_color_active: transparent,
+    border_color_focus: transparent,
+  ),
+  club-secondary: (
+    color_default: $product-500,
+    color_hover: $product-700,
+    color_active: $product-600,
+    color_focus: $product-500,
+    background_color_default: $white,
+    background_color_hover: $white,
+    background_color_active: $white,
+    background_color_focus: $white,
+    border_color_default: $product-500,
+    border_color_hover: $product-600,
+    border_color_active: $product-700,
+    border_color_focus: $product-500,
+  ),
+);
+
+.buttons {
+  display: inline-flex;
+  width: 100%;
+
+  .button ~ .button {
+    margin-left: $spacing-400;
+  }
+}
+
+.button {
+  @extend .ui-body-product-02;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: $spacing-300 $spacing-400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  user-select: none;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  outline: none;
+
+  &.has-no-text {
+    padding: $spacing-300;
+  }
+
+  &.is-small {
+    @extend .ui-body-product-01;
+
+    .icon {
+      width: $line-height-160;
+      height: $line-height-160;
+    }
+  }
+
+  &--fluid {
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &:focus,
+  &:focus-within {
+    &::after {
+      position: absolute;
+      top: -$spacing-100;
+      right: -$spacing-100;
+      bottom: -$spacing-100;
+      left: -$spacing-100;
+      content: '';
+      border-color: $ui-focus;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 2px;
+    }
+  }
+
+  &[disabled],
+  &.is-disabled {
+    color: $white !important;
+    cursor: not-allowed !important;
+    background-color: $neutral-500 !important;
+    border-color: transparent !important;
+  }
+
+  span {
+    &:first-child:not(:last-child) {
+      margin-right: $spacing-400;
+    }
+
+    &:last-child:not(:first-child) {
+      margin-left: $spacing-400;
+    }
+  }
+
+  .icon {
+    width: $line-height-210;
+    height: $line-height-210;
+  }
+
+  @each $button, $data in $buttons-config {
+    &.is-#{$button} {
+      color: map-get($data, color_default);
+      background-color: map-get($data, background_color_default);
+      border-color: map-get($data, border_color_default);
+
+      &:hover {
+        color: map-get($data, color_hover);
+        background-color: map-get($data, background_color_hover);
+        border-color: map-get($data, border_color_hover);
+      }
+
+      &.is-active,
+      &:active {
+        color: map-get($data, color_active);
+        background-color: map-get($data, background_color_active);
+        border-color: map-get($data, border_color_active);
+      }
+
+      &:focus,
+      &:focus-within {
+        color: map-get($data, color_focus);
+        background-color: map-get($data, background_color_focus);
+        border-color: map-get($data, border_color_focus);
+      }
+    }
+  }
+}

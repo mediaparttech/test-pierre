@@ -1,0 +1,54 @@
+// Typography
+// ––––––––––––––––––––––
+
+// Font family
+
+$font-family-news-fallback: 'Georgia', serif;
+$font-family-market-fallback: 'Georgia', serif;
+$font-family-product-fallback: 'Helvetica', 'Arial', sans-serif;
+$font-family-news: 'Pensum Pro', $font-family-news-fallback;
+$font-family-market: 'Pensum Display', $font-family-market-fallback;
+$font-family-product: 'Atlas Grotesk', $font-family-product-fallback;
+
+// Font size
+
+$font-size-base: 16px;
+
+$font-size-100: 0.75rem;
+$font-size-130: 0.875rem;
+$font-size-160: 1rem;
+$font-size-190: 1.125rem;
+$font-size-220: 1.25rem;
+$font-size-250: 1.375rem;
+$font-size-280: 1.5rem;
+$font-size-350: 1.75rem;
+$font-size-380: 1.875rem;
+$font-size-410: 2rem;
+$font-size-470: 2.25rem;
+$font-size-650: 3rem;
+$font-size-900: 4rem;
+
+// Line height
+
+$line-height-100: 1rem;
+$line-height-160: 1.25rem;
+$line-height-210: 1.5rem;
+$line-height-270: 1.75rem;
+$line-height-330: 2rem;
+$line-height-380: 2.25rem;
+$line-height-410: 2.375rem;
+$line-height-500: 2.75rem;
+$line-height-670: 3.5rem;
+$line-height-900: 4.5rem;
+
+// Font weight
+
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-700: 700;
+$font-weight-900: 900;
+
+// Letter spacing
+
+$letter-spacing-condensed: -0.01em;
+$letter-spacing-large: 0.04em;

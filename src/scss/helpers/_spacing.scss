@@ -1,0 +1,86 @@
+// Spacing
+// ––––––––––––––––––––––
+
+.is-marginless {
+  margin: 0 !important;
+}
+
+.is-paddingless {
+  padding: 0 !important;
+}
+
+$spacing-shortcuts: (
+  'margin': 'm',
+  'padding': 'p',
+);
+
+$spacing-directions: (
+  'top': 't',
+  'right': 'r',
+  'bottom': 'b',
+  'left': 'l',
+);
+
+// Wait new tooling with PurgeCSS ot enable lines below (double the size without PurgeCSS)
+$spacing-horizontal: 'x';
+$spacing-vertical: 'y';
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @if ($breakpoint-value == 0) {
+    @each $property, $shortcut in $spacing-shortcuts {
+      @each $name, $value in $spacings {
+        // Cardinal directions
+        @each $direction, $suffix in $spacing-directions {
+          .#{$shortcut}#{$suffix}-#{$name} {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+
+        // Horizontal axis
+        @if variable-exists(spacing-horizontal) {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name} {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+
+        // Vertical axis
+        @if variable-exists(spacing-vertical) {
+          .#{$shortcut}#{$spacing-vertical}-#{$name} {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+      }
+    }
+  } @else {
+    @media screen and (min-width: $breakpoint-value) {
+      @each $property, $shortcut in $spacing-shortcuts {
+        @each $name, $value in $spacings {
+          // Cardinal directions
+          @each $direction, $suffix in $spacing-directions {
+            .#{$shortcut}#{$suffix}-#{$name}-#{$breakpoint-name} {
+              #{$property}-#{$direction}: $value !important;
+            }
+          }
+
+          // Horizontal axis
+          @if variable-exists(spacing-horizontal) {
+            .#{$shortcut}#{$spacing-horizontal}-#{$name}-#{$breakpoint-name} {
+              #{$property}-left: $value !important;
+              #{$property}-right: $value !important;
+            }
+          }
+
+          // Vertical axis
+          @if variable-exists(spacing-vertical) {
+            .#{$shortcut}#{$spacing-vertical}-#{$name}-#{$breakpoint-name} {
+              #{$property}-top: $value !important;
+              #{$property}-bottom: $value !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

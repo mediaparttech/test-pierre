@@ -1,0 +1,38 @@
+<div class="blogs__heading__left is-hidden-until-lg">
+  <div class="bio">
+      <div class="bio__body">
+        <div class="avatar">
+          {% if article.author.avatar %}
+            <img src="{{ article.author.avatar }}" alt="{{ article.author.firstname }} {{ article.author.name }}">
+          {% endif %}
+        </div>
+        <div class="bio__body__name">
+          <p class="heading-product-01 text-product">{{ article.author.firstname }} {{ article.author.name }}</p>
+          <p class="ui-body-product-01 text-product-secondary">Abonné·e Mediapart</p>
+        </div>
+      </div>
+      {% if not has_edition %}
+      <div class="bio__footer ui-body-product-01 text-product">{{ article.author.job }}</div>
+      <div class="bio__counters">
+        <p class="bio__counter">
+          <span class="ui-body-product-02 text-product">34</span>
+          <span class="ui-label-product-01 text-product-secondary">BILLETS</span>
+        </p>
+        <p class="bio__counter">
+          <span class="ui-body-product-02 text-product">01</span>
+          <span class="ui-label-product-01 text-product-secondary">ÉDITION</span>
+        </p>
+      </div>
+      {% endif %}
+    </div>
+    {% if has_edition %}
+      <p class="ui-body-product-02 text-product-accent mt-600">Billet publié dans</p>
+      <a class="is-block background border-light border-radius-medium px-400
+
+      py-400 mt-200" href="#">
+        <p class="ui-label-product-02 text-product-accent font-uppercase">édition</p>
+        <p class="heading-product-02 mt-200">Les mots piégés du néolibéralisme </p>
+        <p class="ui-body-product-02 mt-400">Suivie par 240 abonnés</p>
+      </a>
+    {% endif %}
+</div>

@@ -1,0 +1,200 @@
+{
+"article": {
+  "disclaimer": "Ce blog est personnel, ses contenus n'engagent pas la rédaction.",
+  "author": {
+    "avatar": "~content/images/avatar.png",
+    "firstname": "Mikael",
+    "name": "Fortin",
+    "subscriber": true,
+    "job": "Directeur d'études au Centre de réflexion de Médecins sans frontières (MSF-Crash).",
+    "subscriberNumber": 36,
+    "postNumber": 8,
+    "portfolioNumber": 2,
+    "contactNumber": 28
+  },
+  "type": "Billet de blog",
+  "date": "2 mars 2020",
+  "title": "En Libye, les oubliés !",
+  "summary": "C’est dans ce pays en guerre que l’Union européenne déploie sa politique de soutien aux interceptions et aux retours des migrants. L’hypocrisie règne. Il est difficile de ne pas voir cette population comme la plus indésirable parmi les indésirables. Ce sont les oubliés. Impressions de visite en Libye, auprès des projets de Médecins sans Frontières (9-19 février 2020).",
+  "content": "",
+  "commentsNumber": 8,
+  "recommendNumber": 17,
+  "image_h": {
+    "src": "~content/images/xxl_h_image.jpg",
+    "alt": "xxl_h_image",
+    "width": 1216,
+    "height": 896
+  },
+  "image_v": {
+    "src": "~content/images/xxl_v_image.jpg",
+    "alt": "xxl_v_image",
+    "width": 956,
+    "height": 1520
+  },
+  "recirculations": [
+    {
+      "category": "ABONNÉS",
+      "subCategory": "MAGHREB",
+      "title": "Renzi exclut l'envoi de troupes en Libye pour le moment",
+      "summary": "Le président du Conseil italien Matteo Renzi a démenti dimanche des propos de l'ambassadeur des États-Unis à Rome, selon lequel l'Italie pourrait envoyer jusqu'à 5 000 soldats en Libye pour y combattre le groupe État islamique (EI).",
+      "author": "La rédaction de Mediapart"
+    },
+    {
+      "category": "ABONNÉS",
+      "subCategory": "INTERNATIONAL",
+      "title": "Vendredi, le récit heure par heure des événements libyens",
+      "summary": "Après le vote de la résolution de l'ONU autorisant une opération armée en Libye, plusieurs États s'apprêtent à intervenir. L'opération militaire devrait avoir lieu «dans quelques heures», selon le gouvernement français. Le ministre libyen des affaires étrangères annonce un cessez-le-feu.",
+      "author": "Pierre Puchot"
+    },
+    {
+      "category": "BILLET DE BLOG",
+      "title": "Essayez donc la dictature",
+      "summary": "« Essayez donc la dictature ». Comment dire… c’est bien, pour notre malheur, ce qu’on nous fait « essayer » en ce moment. Si une part si importante de la population est dans un tel état de rage, c’est d’abord par les agressions répétées subies, mais aussi parce que, après tant d’années...",
+      "author": "Jean-Marc B"
+    },
+    {
+      "category": "ABONNÉS",
+      "subCategory": "INTERNATIONAL",
+      "title": "Les très chers tableaux de Guéant",
+      "summary": "Deux marines flamandes du XVIIe siècle valent-elles 500 000 euros ? C’est ce qu’affirme Claude Guéant pour justifier le versement de cette somme sur son compte en 2008. Mais à cette période, deux tableaux du même peintre, lot évalué à 200 000 euros maximum, n'avaient pas trouvé preneur chez Drouot.",
+      "author": "Dan Israel"
+    }
+  ]
+},
+"card": {
+  "comments": {
+    "author": "Babette Grivinci",
+    "answerTo": "Bruno Painvin",
+    "answerDate": "15.07.2020 20:40",
+    "originalDate": "15.07.2020 20:40",
+    "type": "Billet de blog",
+    "publishDate": "3 octobre 2019",
+    "title": "Les monnaies locales complémentaires citoyennes.",
+    "summary": "Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.",
+    "commentsNumber": 8,
+    "anwsersNumber": 17,
+    "recommendNumber": 53,
+    "image": {
+      "src": "~content/images/comment_image.jpg",
+      "alt": "comment_image",
+      "width": 1120,
+      "height": 661
+    }
+  },
+  "user": {
+    "firstname": "Marie",
+    "name": "Pézé",
+    "subscriber": true,
+    "job": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+  }
+},
+"journal_links": {
+  "parent": "Journal",
+  "active": false,
+  "childrens": [
+    {
+      "name": "International",
+      "active": false
+    },
+    {
+      "name": "France",
+      "active": false
+    },
+    {
+      "name": "Économies",
+      "active": false
+    },
+    {
+      "name": "Culture",
+      "active": false
+    },
+    {
+      "name": "Dossier",
+      "active": false
+    }
+  ]
+},
+"studio_links": {
+  "parent": "Studio",
+  "active": false,
+  "childrens": [
+    {
+      "name": "Vidéos",
+      "active": false
+    },
+    {
+      "name": "Podcasts",
+      "active": false
+    },
+    {
+      "name": "Doumentaires",
+      "active": false
+    },
+    {
+      "name": "Portfolio",
+      "active": false
+    },
+    {
+      "name": "Panoramiques",
+      "active": false
+    }
+  ]
+},
+"blog_links": {
+  "parent": "Blogs",
+  "active": true,
+  "childrens": [
+    {
+      "name": "Depuis 48h",
+      "active": false
+    },
+    {
+      "name": "Les blogs",
+      "active": false
+    },
+    {
+      "name": "Les éditions",
+      "active": true
+    },
+    {
+      "name": "L'agenda",
+      "active": false
+    },
+    {
+      "name": "La charte",
+      "active": false
+    },
+    {
+      "name": "Participez",
+      "active": false
+    }
+  ]
+},
+"social_medias": {
+  "facebook": "#",
+  "twitter": "#",
+  "instagram": "#",
+  "youtube": "#",
+  "rss": "#"
+ },
+ "banner": {
+   "red": {
+     "image": "~content/images/banner-red.png",
+     "title": "Seuls nos lecteurs<span class='line-break-md'>peuvent nous acheter !</span>",
+     "description": "Soutenez une presse ne vivant que du soutien de ses lecteurs, sans recettes publicitaires, ni subventions étatiques, ni actionnaires.",
+     "cta": "Je m’abonne"
+   },
+   "green": {
+    "image": "~content/images/banner-green.png",
+    "title": "Faites découvrir votre journal !",
+    "description": "Offrez à vos proches 1 mois d'accès illimité aux enquêtes, analyses et vidéos de Mediapart. Ils pourront juger de toute pièce de la qualité d’un journal 100% indépendant.",
+    "cta": "Je parraine"
+  },
+  "blue": {
+    "image": "~content/images/banner-blue.png",
+    "title": "C’est quoi le club ?",
+    "description": "Plateforme de blogs et réseau social, le Club est l’espace réservé à nos abonnés et invités. Sans piège publicitaire ni algorithme, débattez et commentez librement !",
+    "cta": "En savoir plus"
+  }
+ }
+}

@@ -1,0 +1,136 @@
+{# CARD COMPONENT #}
+
+<div class="card-comment">
+  <div class="card-comment-header">
+    <p class="text mb-400"><span class="ui-product-button font-weight-500">{{ card.comments.author }}</span> ({{ card.comments.answerDate }}) en réponse à <span class="ui-product-button font-weight-500">{{ card.comments.answerTo }}</span> ({{ card.comments.originalDate }})</p>
+  </div>
+  <div class="card-comment-body">
+    <p class="text ui-body-product-02 mb-500">{{ card.comments.summary }}</p>
+    {{ macros.image(card.comments.image) }}
+  </div>
+  <div class="card-comment-footer mt-700">
+    <div>
+      <a href="#" class="action-link">
+        {{ macros.icon("recommend") }}
+        <span>Recommander {{ card.comments.recommendNumber }}</span>
+      </a>
+      <a href="#" class="action-link">
+        {{ macros.icon("reply") }}
+        <span>Répondre</span>
+      </a>
+      <a href="#" class="action-link">
+        {{ macros.icon("edit") }}
+        <span>Modifier</span>
+      </a>
+    </div>
+    <div>
+      <a href="#" class="action-link has-no-text">
+        {{ macros.icon("delete") }}
+      </a>
+      <a href="#" class="action-link has-no-text">
+        {{ macros.icon("alert") }}
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="py-400"></div>
+
+<div class="card-comment">
+  <div class="card-comment-header background py-400 px-400 mb-500 border-radius-medium">
+    <p class="text heading-product-01 mb-100">{{ card.comments.title }}</p>
+    <p class="text-light ui-body-product-01">Publié le {{ card.comments.publishDate }} &middot;	{{ card.comments.type }} &middot;	{{ card.comments.commentsNumber }} commentaires</p>
+  </div>
+  <div class="card-comment-body mb-500">
+    <p class="text-product-secondary ui-body-product-01 mb-400">{{ card.comments.answerDate }}</p>
+    <p class="text ui-body-product-02">{{ card.comments.summary }}</p>
+  </div>
+  <div class="card-comment-footer mt-700">
+    <a href="#" class="ui-body-product-01 text-product-accent">
+      Accéder au commentaire
+    </a>
+    <a href="#" class="ui-body-product-01 text-secondary">
+      {{ card.comments.anwsersNumber }} réponses
+    </a>
+  </div>
+</div>
+
+<div class="py-400"></div>
+
+<div class="card-user shadow-card">
+  <div class="card-user-header mb-600">
+    <div class="bio">
+      <div class="bio__body">
+        <div class="avatar">
+          {% if card.user.avatar %}
+            <img src="{{ card.user.avatar }}" alt="{{ card.user.firstname }} {{ card.user.name }}">
+          {% endif %}
+        </div>
+        <div class="bio__name">
+          <div class="heading-product-01 text-product">{{ card.user.firstname }} {{ card.user.name }}</div>
+          <div class="ui-body-product-01 text-product-secondary">Abonné&middot;e Mediapart</div>
+        </div>
+      </div>
+      <div class="bio__footer ui-body-product-01 text-product">{{ card.user.job }}</div>
+    </div>
+  </div>
+  <div class="card-user-footer">
+    <div class="card-user-label">
+      <span class="ui-body-product-02 text">00</span>
+      <span class="ui-body-product-01 text-product-secondary">LABEL</span>
+    </div>
+    <div class="card-user-label">
+      <span class="ui-body-product-02 text">00</span>
+      <span class="ui-body-product-01 text-product-secondary">LABEL</span>
+    </div>
+    <div class="card-user-label">
+      <span class="ui-body-product-02 text">00</span>
+      <span class="ui-body-product-01 text-product-secondary">LABEL</span>
+    </div>
+    <div class="card-user-label">
+      <span class="ui-body-product-02 text">00</span>
+      <span class="ui-body-product-01 text-product-secondary">LABEL</span>
+    </div>
+  </div>
+</div>
+
+<div class="py-400"></div>
+
+<div class="card-user shadow-card">
+  <div class="card-user-header mb-600">
+    <div class="bio">
+      <div class="bio__body">
+        <div class="avatar">
+          {% if card.user.avatar %}
+            <img src="{{ card.user.avatar }}" alt="{{ card.user.firstname }} {{ card.user.name }}">
+          {% endif %}
+        </div>
+        <div class="bio__name">
+          <div class="heading-product-01 text-product">{{ card.user.firstname }} {{ card.user.name }}</div>
+          <div class="ui-body-product-01 text-product-secondary">Abonné&middot;e Mediapart</div>
+        </div>
+      </div>
+      <div class="bio__footer ui-body-product-01 text-product">{{ card.user.job }}</div>
+    </div>
+  </div>
+  <div class="card-user-footer">
+    <a href="#" class="button is-club-secondary">
+      <span>Inscrivez-vous</span>
+      {{ macros.icon("add") }}
+    </a>
+  </div>
+</div>
+
+<div class="py-400"></div>
+
+<div class="card-folder shadow-card">
+  <div class="card-folder-header mb-200">
+    <p class="ui-label-product-01">DOSSIERS</p>
+  </div>
+  <div class="card-folder-header mb-600">
+    <p class="heading-news-04">L'Arabie saoudite de Mohammed ben Salmane</p>
+  </div>
+  <div class="card-folder-footer">
+    <p class="card-folder-label ui-small-product-01 text px-200 py-100 border-radius-small">17 Articles</p>
+  </div>
+</div>

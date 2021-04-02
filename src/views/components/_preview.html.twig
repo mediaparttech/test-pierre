@@ -1,0 +1,169 @@
+{# DROPDOWN COMPONENT #}
+
+<div class="container py-500 background">
+  {% include "@views/components/dropdown.html.twig" %}
+</div>
+
+{# ARTICLE COMPONENT #}
+
+<div class="container py-500 background">
+  {% include "@views/components/article.html.twig" %}
+</div>
+
+{# ALERT COMPONENT #}
+
+<div class="container py-500 background">
+  {% include "@views/components/alert.html.twig" %}
+</div>
+
+{# CARD COMPONENT #}
+
+<div class="container py-500 background">
+  {% include "@views/components/card.html.twig" %}
+</div>
+
+{# PAGINATION COMPONENT #}
+
+<div class="container py-500 background">
+  {% include "@views/components/pagination.html.twig" %}
+</div>
+
+{# SPINNER COMPONENT #}
+
+<div class="container py-500 background">
+  {% include "@views/components/spinner.html.twig" %}
+</div>
+
+{# LINK COMPONENT #}
+
+<div class="container py-500 background">
+  {% include "@views/components/link.html.twig" %}
+</div>
+
+{# FORM COMPONENT #}
+
+<div class="container py-500 background">
+  {% include "@views/components/form.html.twig" %}
+</div>
+
+{# SWITCH COMPONENT #}
+
+<div class="container py-500 background">
+  <div class="switch">
+    <input id="switch-1" type="checkbox">
+    <label for="switch-1" class="switch-trail">
+      <span class="switch-handler">
+        {{ macros.icon("check") }}
+      </span>
+    </label>
+  </div>
+  <div class="switch">
+    <input id="switch-2" type="checkbox">
+    <label for="switch-2" class="switch-trail">
+      <span class="switch-handler">
+        {{ macros.icon("check") }}
+      </span>
+    </label>
+  </div>
+  <div class="switch">
+    <input id="switch-3" type="checkbox">
+    <label for="switch-3" class="switch-trail">
+      <span class="switch-handler">
+        {{ macros.icon("check") }}
+      </span>
+    </label>
+  </div>
+</div>
+
+{# AVATAR COMPONENT #}
+
+<div class="container py-500 background">
+  {% include "@views/components/avatar.html.twig" %}
+</div>
+
+{# BIO COMPONENT #}
+
+<div class="container py-500 background">
+  {% include "@views/components/bio.html.twig" %}
+</div>
+
+{# MESSAGE COMPONENT #}
+
+<div class="container py-500 background">
+  {% include "@views/components/message.html.twig" %}
+</div>
+
+{# ACTION-LINK COMPONENT #}
+
+<div class="container py-500 background">
+  <a href="#" class="action-link">
+    <span>accueil</span>
+    {{ macros.icon("home") }}
+  </a>
+  <a href="#" class="action-link is-disabled">
+    <span>accueil</span>
+    {{ macros.icon("home") }}
+  </a>
+  <a href="#" class="action-link is-small">
+    <span>accueil</span>
+    {{ macros.icon("home") }}
+  </a>
+  <a href="#" class="action-link has-no-text">
+    {{ macros.icon("home") }}
+  </a>
+</div>
+
+{# BUTTON COMPONENT #}
+
+<div class="container py-500 background">
+  <div class="buttons">
+    <a href="#" class="button is-primary">
+      <span>button</span>
+      {{ macros.icon("arrow-right") }}
+    </a>
+    <a href="#" class="button is-secondary">
+      <span>button</span>
+      {{ macros.icon("arrow-right") }}
+    </a>
+    <a href="#" class="button is-club-primary">
+      <span>button</span>
+      {{ macros.icon("arrow-right") }}
+    </a>
+    <a href="#" class="button is-club-secondary">
+      <span>button</span>
+      {{ macros.icon("arrow-right") }}
+    </a>
+  </div>
+</div>
+
+<div class="container py-500 background-dark">
+  <div class="buttons">
+    <a href="#" class="button is-primary-invert">
+      <span>button</span>
+      {{ macros.icon("arrow-right") }}
+    </a>
+    <a href="#" class="button is-secondary-invert">
+      <span>button</span>
+      {{ macros.icon("arrow-right") }}
+    </a>
+  </div>
+</div>
+
+{# TAG COMPONENT #}
+
+<div class="container py-500 background">
+  <div class="tags">
+    <a href="#" class="tag">
+      <span>tag</span>
+    </a>
+    <a href="#" class="tag is-active">
+      <span>tag</span>
+    </a>
+    <a href="#" class="tag is-disabled">
+      <span>tag</span>
+    </a>
+    <a href="#" class="tag">
+      {{ macros.icon("options") }}
+    </a>
+  </div>
+</div>

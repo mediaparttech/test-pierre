@@ -1,0 +1,36 @@
+// Layout - Splitter
+// ––––––––––––––––––––––
+
+.splitter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 100%;
+
+  &.is-vertical {
+    flex-direction: column;
+
+    & > .splitter__first,
+    & > .splitter__last {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &__first {
+    .action-link {
+      &:first-child {
+        margin-left: -$spacing-300;
+      }
+    }
+  }
+
+  &__last {
+    .action-link {
+      &:last-child {
+        margin-right: -$spacing-300;
+      }
+    }
+  }
+}

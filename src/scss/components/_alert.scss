@@ -1,0 +1,53 @@
+// Alert
+// ––––––––––––––––––––––
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  color: $neutral-900;
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: $border-radius-medium;
+
+  @include breakpoint-md {
+    align-items: center;
+  }
+
+  &-body,
+  &-button {
+    height: 100%;
+    padding: $spacing-400;
+
+    @include breakpoint-md {
+      padding: $spacing-500;
+    }
+  }
+
+  &-body {
+    width: 100%;
+    font-size: $font-size-130;
+    font-weight: $font-weight-500;
+    line-height: $line-height-160;
+
+    @include breakpoint-md {
+      font-size: $font-size-160;
+      line-height: $line-height-210;
+    }
+
+    @include breakpoint-lg {
+      text-align: center;
+    }
+  }
+
+  .icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    @include breakpoint-md {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

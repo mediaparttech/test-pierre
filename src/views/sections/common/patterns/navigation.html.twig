@@ -1,0 +1,160 @@
+{# NAVIGATION PATTERN #}
+
+<nav class="nav" data-nav>
+  <div class="nav-main container">
+
+    <a href="#" class="nav-logo">
+      {% include "@views/components/mediapart-logo.html.twig" %}
+    </a>
+
+    <div class="nav-menu">
+      <div class="nav-item dropdown{{ journal_links.active ? ' is-active' }}">
+        <a href="#" class="nav-link" aria-haspopup="true" aria-controls="journal-dropdown-menu">{{ journal_links.parent }}</a>
+        <div class="dropdown-menu" id="journal-dropdown-menu" role="menu">
+          {% for children in journal_links.childrens %}
+            <a href="#" class="dropdown-item{{ children.active ? ' is-active' }}">{{ children.name }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="nav-item dropdown{{ studio_links.active ? ' is-active' }}">
+        <a href="#" class="nav-link" aria-haspopup="true" aria-controls="studio-dropdown-menu">{{ studio_links.parent }}</a>
+        <div class="dropdown-menu" id="studio-dropdown-menu" role="menu">
+          {% for children in studio_links.childrens %}
+            <a href="#" class="dropdown-item{{ children.active ? ' is-active' }}">{{ children.name }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="nav-item nav-item-blog dropdown{{ blog_links.active ? ' is-active' }}">
+        <a href="#" class="nav-link" aria-haspopup="true" aria-controls="blog-dropdown-menu">{{ blog_links.parent }}</a>
+        <div class="dropdown-menu" id="blog-dropdown-menu" role="menu">
+          {% for children in blog_links.childrens %}
+            <a href="#" class="dropdown-item dropdown-item--product{{ children.active ? ' is-active' }}">{{ children.name }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="nav-item is-hidden-until-lg">
+        <a href="#" class="nav-link{{ blog_links.active ? ' is-active' }}">S’abonner</a>
+      </div>
+    </div>
+
+    <form class="nav-search" method="get" action="#">
+      <input class="input" type="text" name="search_word" placeholder="Rechercher sur Mediapart">
+      <div class="nav-search-buttons">
+        <button type="submit" class="button is-primary">Rechercher</button>
+        <button type="reset" class="button is-secondary is-hidden-lg" data-nav-search-close>Annuler</button>
+      </div>
+    </form>
+
+    <div class="nav-user">
+      <a href="#" class="nav-user-item">
+        {{ macros.icon('user') }}
+        <span>Abonnement</span>
+      </a>
+      <a href="#" class="nav-user-item">
+        {{ macros.icon('calendar') }}
+        <span>Espace personnel</span>
+      </a>
+      <a href="#" class="nav-user-item">
+        {{ macros.icon('calendar') }}
+        <span>Profil public</span>
+      </a>
+      <hr>
+      <a href="#" class="nav-user-item">
+        {{ macros.icon('bookmark') }}
+        <span>Liste de lecture</span>
+      </a>
+      <a href="#" class="nav-user-item">
+        <span>Mes commentaires</span>
+      </a>
+      <a href="#" class="nav-user-item">
+        <span>Mes contacts</span>
+      </a>
+      <a href="#" class="nav-user-item">
+        <span>Mes messages</span>
+      </a>
+      <hr>
+      <a href="#" class="nav-user-item ui-alert">
+        <span>Se déconnecter</span>
+      </a>
+    </div>
+
+    <div class="nav-buttons">
+      <div class="dropdown">
+        <button class="nav-icon" aria-haspopup="true" aria-controls="user-dropdown-menu">{{ macros.icon('user') }}</button>
+        <div class="dropdown-menu" id="user-dropdown-menu" role="menu">
+          <a href="#" class="dropdown-item">
+            {{ macros.icon('user') }}
+            <span>Abonnement</span>
+            </a>
+          <a href="#" class="dropdown-item">
+            {{ macros.icon('calendar') }}
+            <span>Espace personnel</span>
+            </a>
+          <a href="#" class="dropdown-item">
+            {{ macros.icon('calendar') }}
+            <span>Profil public</span>
+            </a>
+          <hr class="dropdown-divider">
+          <a href="#" class="dropdown-item">
+            {{ macros.icon('bookmark') }}
+            <span>Liste de lecture</span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <span>Mes commentaires</span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <span>Mes contacts</span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <span>Mes messages</span>
+          </a>
+          <hr class="dropdown-divider">
+          <a href="#" class="dropdown-item ui-alert">
+            <span>Se déconnecter</span>
+          </a>
+        </div>
+      </div>
+      <button class="nav-icon is-hidden-lg" data-nav-user-toggle>{{ macros.icon('user') }}</button>
+      <button class="nav-icon" data-nav-search-toggle>{{ macros.icon('search', 'nav-icon--search') }}{{ macros.icon('close',  'nav-icon--close') }}</button>
+      <button class="nav-icon" data-nav-burger-toggle>{{ macros.icon('navigation') }}</button>
+    </div>
+  </div>
+
+  <div class="nav-menu-mobile">
+    <div class="nav-item{{ journal_links.active ? ' is-active' }}">
+      <a href="#" class="nav-link">{{ journal_links.parent }}</a>
+      {% for children in journal_links.childrens %}
+        <a href="#" class="{{ children.active ? ' is-active' }}">{{ children.name }}</a>
+      {% endfor %}
+    </div>
+    <div class="nav-item{{ studio_links.active ? ' is-active' }}">
+      <a href="#" class="nav-link">{{ studio_links.parent }}</a>
+      {% for children in studio_links.childrens %}
+        <a href="#" class="{{ children.active ? ' is-active' }}">{{ children.name }}</a>
+      {% endfor %}
+    </div>
+    <div class="nav-item nav-item-blog{{ blog_links.active ? ' is-active' }}">
+      <a href="#" class="nav-link">{{ blog_links.parent }}</a>
+      {% for children in blog_links.childrens %}
+        <a href="#" class="{{ children.active ? ' is-active' }}">{{ children.name }}</a>
+      {% endfor %}
+    </div>
+    <div class="nav-item is-hidden-until-lg">
+      <a href="#" class="nav-link{{ blog_links.active ? ' is-active' }}">S’abonner</a>
+    </div>
+  </div>
+
+  <div class="nav-shortcuts container">
+    <div class="nav-item{{ journal_links.active ? ' is-active' }}">
+      <a href="#" class="nav-link">{{ journal_links.parent }}</a>
+    </div>
+    <div class="nav-item{{ studio_links.active ? ' is-active' }}">
+      <a href="#" class="nav-link">{{ studio_links.parent }}</a>
+    </div>
+    <div class="nav-item{{ blog_links.active ? ' is-active' }}">
+      <a href="#" class="nav-link">{{ blog_links.parent }}</a>
+    </div>
+  </div>
+
+  <div class="nav-overlay"></div>
+</nav>

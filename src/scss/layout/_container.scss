@@ -1,0 +1,14 @@
+// Layout - Container
+// ––––––––––––––––––––––
+
+.container {
+  position: relative;
+  flex-grow: 1;
+  width: auto;
+  max-width: #{$breakpoint-xxl - 2 * $spacing-700};
+  padding-top: 0;
+  padding-right: calc(var(--global-container-padding));
+  padding-bottom: 0;
+  padding-left: var(--global-container-padding);
+  margin: 0 auto;
+}

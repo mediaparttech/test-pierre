@@ -1,0 +1,98 @@
+// Visibility
+// ––––––––––––––––––––––
+
+$displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex';
+
+@each $display in $displays {
+  .is-#{$display} {
+    display: #{$display} !important;
+  }
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+@include breakpoint-xs {
+  .is-hidden-xs {
+    display: none !important;
+  }
+}
+
+@include breakpoint-sm {
+  .is-hidden-sm {
+    display: none !important;
+  }
+}
+
+@include breakpoint-sm-only {
+  .is-hidden-sm-only {
+    display: none !important;
+  }
+}
+
+@include breakpoint-until-md {
+  .is-hidden-until-md {
+    display: none !important;
+  }
+}
+
+@include breakpoint-md {
+  .is-hidden-md {
+    display: none !important;
+  }
+}
+
+@include breakpoint-md-only {
+  .is-hidden-md-only {
+    display: none !important;
+  }
+}
+
+@include breakpoint-until-lg {
+  .is-hidden-until-lg {
+    display: none !important;
+  }
+}
+
+@include breakpoint-lg {
+  .is-hidden-lg {
+    display: none !important;
+  }
+}
+
+@include breakpoint-lg-only {
+  .is-hidden-lg-only {
+    display: none !important;
+  }
+}
+
+@include breakpoint-until-xl {
+  .is-hidden-until-xl {
+    display: none !important;
+  }
+}
+
+@include breakpoint-xl {
+  .is-hidden-xl {
+    display: none !important;
+  }
+}
+
+@include breakpoint-xl-only {
+  .is-hidden-xl-only {
+    display: none !important;
+  }
+}
+
+@include breakpoint-until-xxl {
+  .is-hidden-until-xxl {
+    display: none !important;
+  }
+}
+
+@include breakpoint-xxl {
+  .is-hidden-xxl {
+    display: none !important;
+  }
+}

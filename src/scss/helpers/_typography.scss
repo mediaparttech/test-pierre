@@ -1,0 +1,56 @@
+// Typography
+// ––––––––––––––––––––––
+
+.font-capitalized {
+  text-transform: capitalize !important;
+}
+
+.font-lowercase {
+  text-transform: lowercase !important;
+}
+
+.font-uppercase {
+  text-transform: uppercase !important;
+}
+
+.font-italic {
+  font-style: italic !important;
+}
+
+.font-underline {
+  text-decoration: underline !important;
+}
+
+.font-weight {
+  &-400 {
+    font-weight: $font-weight-400;
+  }
+
+  &-500 {
+    font-weight: $font-weight-500;
+  }
+
+  &-700 {
+    font-weight: $font-weight-700;
+  }
+
+  &-900 {
+    font-weight: $font-weight-900;
+  }
+}
+
+.text-align-center {
+  text-align: center !important;
+}
+
+.text-align-justify {
+  text-align: justify !important;
+}
+
+.text-align-right {
+  text-align: right !important;
+}
+
+.text-align-left {
+  text-align: left !important;
+}

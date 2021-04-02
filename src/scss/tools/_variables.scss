@@ -1,0 +1,107 @@
+// Variables
+// ––––––––––––––––––––––
+
+// General colors
+
+$background: $white;
+$background-grey: $neutral-200;
+$background-dark: $black;
+$background-product-light: $product-100;
+$background-product-dark: $product-900;
+
+// Text colors
+
+$text: $neutral-900;
+$text-invert: $white;
+$text-secondary: $neutral-700;
+$text-light: $neutral-600;
+$text-brand: $brand;
+$text-accent: $red-500;
+$text-product: $product-850;
+$text-product-secondary: $product-700;
+$text-product-accent: $product-500;
+
+// UI colors
+
+$ui-primary-button: $neutral-900;
+$ui-primary-button-hover: $neutral-700;
+$ui-primary-button-active: $neutral-600;
+$ui-product-button: $product-500;
+$ui-product-button-hover: $product-600;
+$ui-product-button-active: $product-700;
+$ui-stroke-light: $neutral-200;
+$ui-stroke-medium: $neutral-600;
+$ui-stroke-dark: $neutral-900;
+$ui-icons: $neutral-900;
+$ui-focus: $blue-500;
+$ui-alert: $red-500;
+$ui-success: $green-500;
+$ui-disabled: $neutral-500;
+$ui-system-accent: $blue-600;
+$ui-system-background: $blue-100;
+
+// Lists and Maps
+
+$breakpoints: (
+  'xs': $breakpoint-xs,
+  'sm': $breakpoint-sm,
+  'md': $breakpoint-md,
+  'lg': $breakpoint-lg,
+  'xl': $breakpoint-xl,
+  'xxl': $breakpoint-xxl,
+);
+
+$spacings: (
+  '100': $spacing-100,
+  '200': $spacing-200,
+  '300': $spacing-300,
+  '400': $spacing-400,
+  '500': $spacing-500,
+  '600': $spacing-600,
+  '650': $spacing-650,
+  '700': $spacing-700,
+  '800': $spacing-800,
+  '900': $spacing-900,
+  '1100': $spacing-1100,
+);
+
+$background-colors: (
+  'background': $background,
+  'background-grey': $background-grey,
+  'background-dark': $background-dark,
+  'background-product-light': $background-product-light,
+  'background-product-dark': $background-product-dark,
+);
+
+$text-colors: (
+  'text': $text,
+  'text-brand': $text-brand,
+  'text-inverse': $text-invert,
+  'text-secondary': $text-secondary,
+  'text-light': $text-light,
+  'text-accent': $text-accent,
+  'text-product': $text-product,
+  'text-product-secondary': $text-product-secondary,
+  'text-product-accent': $text-product-accent,
+);
+
+$ui-colors: (
+  'ui-primary-button': $ui-primary-button,
+  'ui-primary-button-hover': $ui-primary-button-hover,
+  'ui-primary-button-active': $ui-primary-button-active,
+  'ui-product-button': $ui-product-button,
+  'ui-product-button-hover': $ui-product-button-hover,
+  'ui-product-button-active': $ui-product-button-active,
+  'ui-stroke-light': $ui-stroke-light,
+  'ui-stroke-medium': $ui-stroke-medium,
+  'ui-stroke-dark': $ui-stroke-dark,
+  'ui-icons': $ui-icons,
+  'ui-focus': $ui-focus,
+  'ui-alert': $ui-alert,
+  'ui-success': $ui-success,
+  'ui-disabled': $ui-disabled,
+);
+
+// Elements
+
+$overlay-background: rgba($black, 0.6);

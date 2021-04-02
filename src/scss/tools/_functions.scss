@@ -1,0 +1,34 @@
+// Functions
+// ––––––––––––––––––––––
+
+// Remove the unit of a length
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+// Change the unit of a length
+@function rem2em($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return ($number / ($number * 0 + 1)) * 1em;
+  }
+
+  @return $number;
+}
+
+// Keep RGB format on output
+@function rgb-format($color, $alpha) {
+  @if $alpha {
+    @return unquote('rgba(#{red($color)}, #{green($color)}, #{blue($color)}, #{$alpha})');
+  }
+
+  @return unquote('rgb(#{red($color)}, #{green($color)}, #{blue($color)})');
+}
+
+// Convert colour to string and replace '#' with '%23'
+@function url-friendly-colour($colour) {
+  @return '%23' + str-slice('#{$colour}', 2, -1);
+}

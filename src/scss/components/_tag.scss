@@ -1,0 +1,63 @@
+// Tag
+// ––––––––––––––––––––––
+
+.tags {
+  .tag ~ .tag {
+    margin-left: $spacing-200;
+  }
+}
+
+.tag {
+  @extend .ui-body-product-02;
+
+  display: inline-flex;
+  padding: $spacing-100 $spacing-400;
+  color: $neutral-900;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: $neutral-100;
+  border: 1px solid transparent;
+  border-radius: $border-radius-rounded;
+  outline: none;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+
+  &:hover {
+    background-color: $neutral-200;
+  }
+
+  &.is-active,
+  &:active {
+    color: $white;
+    background-color: $neutral-900;
+  }
+
+  &:focus,
+  &:focus-within {
+    border-color: $ui-focus;
+  }
+
+  &[disabled],
+  &.is-disabled {
+    color: $ui-disabled;
+    cursor: not-allowed;
+    background-color: $neutral-100;
+    border-color: transparent;
+  }
+
+  span {
+    &:first-child:not(:last-child) {
+      margin-right: $spacing-200;
+    }
+
+    &:last-child:not(:first-child) {
+      margin-left: $spacing-200;
+    }
+  }
+
+  .icon {
+    width: $line-height-210;
+    height: $line-height-210;
+  }
+}

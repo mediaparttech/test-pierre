@@ -1,0 +1,36 @@
+// Message
+// ––––––––––––––––––––––
+
+.message {
+  &-feedback,
+  &-highlight {
+    @extend .ui-body-product-01;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-400;
+    white-space: nowrap;
+    user-select: none;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    border-radius: $border-radius-medium;
+    outline: none;
+
+    .icon {
+      width: $line-height-160;
+      height: $line-height-160;
+      margin-right: $spacing-200;
+    }
+  }
+
+  &-feedback {
+    color: $white;
+    background-color: $neutral-900;
+  }
+
+  &-highlight {
+    color: $ui-system-accent;
+    background-color: $ui-system-background;
+  }
+}

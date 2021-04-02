@@ -1,0 +1,18 @@
+// Spinner
+// ––––––––––––––––––––––
+
+.spinner {
+  box-sizing: border-box;
+  width: $spacing-700;
+  height: $spacing-700;
+  border: 4px solid $ui-system-background;
+  border-top-color: $ui-system-accent;
+  border-radius: 100%;
+  animation: spin 2000ms infinite $animation-curve-ease-in-out-circ;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

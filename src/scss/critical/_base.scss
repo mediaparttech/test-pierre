@@ -1,0 +1,69 @@
+// Generic
+// ––––––––––––––––––––––
+
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: $font-size-base;
+  background-color: $background;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@include onPageScrollDisabled {
+  padding-right: var(--global-scrollbar-width);
+  overflow-y: hidden;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: $font-family-product;
+}
+
+body {
+  margin-top: var(--global-navigation-height);
+  font-size: $font-size-base;
+  font-weight: $font-weight-400;
+  line-height: $line-height-100;
+  color: $text;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  vertical-align: baseline;
+}
+
+table {
+  td,
+  th {
+    vertical-align: top;
+
+    &:not([align]) {
+      text-align: inherit;
+    }
+  }
+}
+
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}

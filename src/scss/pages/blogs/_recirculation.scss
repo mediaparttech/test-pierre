@@ -1,0 +1,92 @@
+// Pages - Blogs - Recirculation
+// ––––––––––––––––––––––
+
+.blogs__recirculations {
+  margin-bottom: $spacing-700;
+
+  @include breakpoint-md {
+    margin-bottom: $spacing-800;
+  }
+}
+
+.blogs__recirculation {
+  padding-top: $spacing-500;
+  margin-top: $spacing-900;
+  border-top: solid 1px $neutral-200;
+
+  + .blogs__recirculation {
+    margin-top: $spacing-700;
+  }
+
+  .blogs__recirculation__article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 4;
+    margin: $spacing-500 0;
+
+    @include breakpoint-until-sm {
+      &:nth-of-type(n + 2)::after {
+        position: absolute;
+        top: #{-1 * $spacing-500};
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        content: '';
+        background-color: $neutral-200;
+      }
+    }
+
+    @include breakpoint-until-lg {
+      &:nth-of-type(n + 3)::after {
+        position: absolute;
+        top: #{-1 * $spacing-500};
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        content: '';
+        background-color: $neutral-200;
+      }
+    }
+
+    @include breakpoint-sm {
+      &:nth-of-type(even)::before {
+        position: absolute;
+        top: 0;
+        left: calc(var(--grid-gap) / -2);
+        display: block;
+        width: 1px;
+        height: 100%;
+        content: '';
+        background-color: $neutral-200;
+      }
+    }
+
+    @include breakpoint-lg {
+      &:not(:first-child)::before {
+        position: absolute;
+        top: 0;
+        left: calc(var(--grid-gap) / -2);
+        display: block;
+        width: 1px;
+        height: 100%;
+        content: '';
+        background-color: $neutral-200;
+      }
+    }
+
+    @include breakpoint-sm {
+      grid-column: span 2;
+    }
+
+    @include breakpoint-md {
+      grid-column: span 4;
+    }
+
+    @include breakpoint-lg {
+      grid-column: span 3;
+    }
+  }
+}

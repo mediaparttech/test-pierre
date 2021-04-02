@@ -1,0 +1,15 @@
+// Signature
+// ––––––––––––––––––––––
+
+.signature {
+  display: flex;
+  align-items: center;
+
+  &__body {
+    //
+  }
+
+  &__icon {
+    margin-left: $spacing-600;
+  }
+}

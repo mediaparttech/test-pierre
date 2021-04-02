@@ -1,0 +1,159 @@
+// Layout - Grid
+// ––––––––––––––––––––––
+
+$grid-config: (
+  xs: (
+    breakpoint: $breakpoint-xs,
+    grid_gap: $spacing-400,
+    grid_auto_flow: row,
+    grid_auto_columns: auto,
+    grid_auto_rows: auto,
+    repeat_columns: 4,
+    repeat_columns_size: 1fr,
+    justify_content: space-evenly,
+    justify_items: stretch,
+    align_content: center,
+    align_items: stretch,
+    grid_column: auto,
+    grid_row: auto,
+    justify_self: auto,
+    align_self: auto,
+  ),
+  sm: (
+    breakpoint: $breakpoint-sm,
+    grid_gap: $spacing-600,
+    grid_auto_flow: row,
+    grid_auto_columns: auto,
+    grid_auto_rows: auto,
+    repeat_columns: 4,
+    repeat_columns_size: 1fr,
+    justify_content: space-evenly,
+    justify_items: stretch,
+    align_content: center,
+    align_items: stretch,
+    grid_column: auto,
+    grid_row: auto,
+    justify_self: auto,
+    align_self: auto,
+  ),
+  md: (
+    breakpoint: $breakpoint-md,
+    grid_gap: $spacing-600,
+    grid_auto_flow: row,
+    grid_auto_columns: auto,
+    grid_auto_rows: auto,
+    repeat_columns: 8,
+    repeat_columns_size: 1fr,
+    justify_content: space-evenly,
+    justify_items: stretch,
+    align_content: center,
+    align_items: stretch,
+    grid_column: auto,
+    grid_row: auto,
+    justify_self: auto,
+    align_self: auto,
+  ),
+  lg: (
+    breakpoint: $breakpoint-lg,
+    grid_gap: $spacing-600,
+    grid_auto_flow: row,
+    grid_auto_columns: auto,
+    grid_auto_rows: auto,
+    repeat_columns: 12,
+    repeat_columns_size: 1fr,
+    justify_content: space-evenly,
+    justify_items: stretch,
+    align_content: center,
+    align_items: stretch,
+    grid_column: auto,
+    grid_row: auto,
+    justify_self: auto,
+    align_self: auto,
+  ),
+  xl: (
+    breakpoint: $breakpoint-xl,
+    grid_gap: $spacing-700,
+    grid_auto_flow: row,
+    grid_auto_columns: auto,
+    grid_auto_rows: auto,
+    repeat_columns: 12,
+    repeat_columns_size: 1fr,
+    justify_content: space-evenly,
+    justify_items: stretch,
+    align_content: center,
+    align_items: stretch,
+    grid_column: auto,
+    grid_row: auto,
+    justify_self: auto,
+    align_self: auto,
+  ),
+  xxl: (
+    breakpoint: $breakpoint-xxl,
+    grid_gap: $spacing-700,
+    grid_auto_flow: row,
+    grid_auto_columns: auto,
+    grid_auto_rows: auto,
+    repeat_columns: 12,
+    repeat_columns_size: 68px,
+    justify_content: initial,
+    justify_items: stretch,
+    align_content: center,
+    align_items: stretch,
+    grid_column: auto,
+    grid_row: auto,
+    justify_self: auto,
+    align_self: auto,
+  ),
+);
+
+@mixin grid-breakpoint($breakpoint) {
+  @if ($breakpoint != 0) {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+.grid {
+  display: grid;
+
+  &--debug {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999999999;
+
+    & > li {
+      height: 100vh;
+      padding: 0.5rem;
+      font-family: $font-family-product;
+      font-size: $font-size-280;
+      font-weight: $font-weight-900;
+      color: $red-850;
+      text-align: center;
+      background-color: rgba($red-150, 0.1);
+      border: 1px dashed $red-200;
+    }
+  }
+
+  @each $bp, $data in $grid-config {
+    @include grid-breakpoint(map-get($data, breakpoint)) {
+      --grid-gap: #{map-get($data, grid_gap)};
+
+      grid-template-rows: none;
+      grid-template-columns: repeat(map-get($data, repeat_columns), map-get($data, repeat_columns_size));
+      grid-auto-rows: map-get($data, grid_auto_rows);
+      grid-auto-columns: map-get($data, grid_auto_columns);
+      grid-auto-flow: map-get($data, grid_auto_flow);
+      column-gap: map-get($data, grid_gap);
+      align-content: map-get($data, align_content);
+      align-items: map-get($data, align_items);
+      justify-content: map-get($data, justify_content);
+      justify-items: map-get($data, justify_items);
+    }
+  }
+}

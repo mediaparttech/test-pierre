@@ -1,0 +1,53 @@
+// Bio
+// ––––––––––––––––––––––
+
+.bio {
+  &__body {
+    display: flex;
+
+    @include breakpoint-lg {
+      display: block;
+    }
+
+    &__name {
+      margin-left: $spacing-300;
+
+      @include breakpoint-lg {
+        margin-top: $spacing-300;
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: $spacing-200;
+
+    @include breakpoint-lg {
+      margin-top: $spacing-300;
+    }
+  }
+
+  &__counters {
+    display: none;
+
+    @include breakpoint-lg {
+      display: flex;
+      margin-top: $spacing-500;
+    }
+  }
+
+  &__counter {
+    display: flex;
+    flex-direction: column;
+
+    span:last-child {
+      margin-top: $spacing-100;
+    }
+
+    &:first-child {
+      padding-right: $spacing-400;
+      margin-right: $spacing-400;
+      border-right: 1px solid $neutral-200;
+    }
+  }
+}

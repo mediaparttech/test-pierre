@@ -1,0 +1,77 @@
+// Pages - Blogs - Heading
+// ––––––––––––––––––––––
+
+.blogs__heading {
+  position: relative;
+  grid-template-areas:
+    'heading_top heading_top heading_top heading_top'
+    'heading_center heading_center heading_center heading_center'
+    'heading_right heading_right heading_right heading_right'
+    'heading_left heading_left heading_left heading_left';
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    grid-column: -1 / 1;
+    width: calc(100vw - var(--global-scrollbar-width));
+    height: 100%;
+    margin-left: calc(50% - 50vw + (var(--global-scrollbar-width) / 2));
+    content: '';
+    background-color: $background-product-light;
+
+    @include onPageScrollDisabled {
+      width: 100vw;
+    }
+  }
+
+  @include breakpoint-md {
+    grid-template-areas:
+      'heading_top heading_top heading_top heading_top heading_top heading_top heading_top heading_top'
+      '. heading_center heading_center heading_center heading_center heading_center heading_center .'
+      '. heading_right heading_right heading_right heading_right heading_right heading_right .'
+      '. heading_left heading_left heading_left heading_left heading_left heading_left .';
+  }
+
+  @include breakpoint-lg {
+    grid-template-areas:
+      'heading_top heading_top heading_top heading_top heading_top heading_top heading_top heading_top heading_top heading_top heading_top heading_top'
+      'heading_left heading_left heading_left heading_center heading_center heading_center heading_center heading_center heading_center heading_center heading_right heading_right';
+  }
+
+  @include breakpoint-xl {
+    grid-template-areas:
+      'heading_top heading_top heading_top heading_top heading_top heading_top heading_top heading_top heading_top heading_top heading_top heading_top'
+      'heading_left heading_left heading_left heading_center heading_center heading_center heading_center heading_center heading_center heading_right heading_right heading_right';
+  }
+
+  &__top {
+    grid-area: heading_top;
+  }
+
+  &__center {
+    grid-area: heading_center;
+  }
+
+  &__left {
+    grid-area: heading_left;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    grid-area: heading_right;
+
+    .button {
+      align-self: flex-start;
+
+      // TODO: improve spacing helpers to handle until cases and remove line bellow
+      @include breakpoint-until-lg {
+        margin-top: $spacing-500;
+      }
+
+      @include breakpoint-lg {
+        align-self: flex-end;
+      }
+    }
+  }
+}

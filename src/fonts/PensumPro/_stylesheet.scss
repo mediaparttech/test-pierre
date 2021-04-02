@@ -1,0 +1,33 @@
+// Pensum pro font is mainly used for journal content and heading
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pensum Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('PensumPro-Regular.woff2') format('woff2'), url('PensumPro-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pensum Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url('PensumPro-RegularItalic.woff2') format('woff2'), url('PensumPro-RegularItalic.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pensum Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('PensumPro-Bold.woff2') format('woff2'), url('PensumPro-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pensum Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: url('PensumPro-ExtraBold.woff2') format('woff2'), url('PensumPro-ExtraBold.woff') format('woff');
+}

@@ -1,0 +1,40 @@
+// Logo
+// ––––––––––––––––––––––
+
+.mediapart-logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 21px;
+  margin-right: auto;
+  vertical-align: middle;
+  pointer-events: none;
+
+  @include breakpoint-sm {
+    height: 24px;
+  }
+
+  @include breakpoint-md {
+    height: 32px;
+  }
+
+  svg {
+    flex-shrink: 0;
+    height: 100%;
+    overflow: visible;
+  }
+
+  &-icon {
+    display: none;
+    padding-right: $spacing-300;
+
+    @include breakpoint-md {
+      padding-right: $spacing-400;
+    }
+
+    @include breakpoint-sm {
+      display: block;
+    }
+  }
+}

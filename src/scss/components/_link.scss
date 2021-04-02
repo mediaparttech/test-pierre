@@ -1,0 +1,65 @@
+// Link
+// ––––––––––––––––––––––
+
+.link {
+  @extend .ui-body-product-02;
+
+  position: relative;
+  z-index: auto;
+  display: inline-block;
+  color: $neutral-900;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  cursor: pointer;
+  border-bottom: 1px solid $neutral-900;
+  outline: none;
+
+  &.is-small {
+    @extend .ui-body-product-01;
+  }
+
+  &:hover,
+  &:active {
+    &::before {
+      position: absolute;
+      top: -$spacing-100;
+      right: -$spacing-100;
+      bottom: -$spacing-100;
+      left: -$spacing-100;
+      z-index: -1;
+      content: '';
+    }
+  }
+
+  &:hover {
+    &::before {
+      background-color: $neutral-100;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $neutral-200;
+    }
+  }
+
+  &:focus,
+  &:focus-within {
+    &::after {
+      position: absolute;
+      top: -$spacing-100;
+      right: -$spacing-100;
+      bottom: -$spacing-100;
+      left: -$spacing-100;
+      content: '';
+      border-color: $ui-focus;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 2px;
+    }
+  }
+
+  &[disabled],
+  &.is-disabled {
+    cursor: not-allowed !important;
+  }
+}

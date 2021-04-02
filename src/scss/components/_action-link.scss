@@ -1,0 +1,149 @@
+// Action Links
+// ––––––––––––––––––––––
+
+// TODO: must be cleanup in DS to uniformise all actions link type
+
+.action-links {
+  display: inline-flex;
+}
+
+.action-link {
+  @extend .ui-body-product-02;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-200 $spacing-300;
+  color: $neutral-900;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: $border-radius-rounded;
+  outline: none;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+
+  &.has-no-text {
+    padding: $spacing-200;
+  }
+
+  &.is-small {
+    @extend .ui-small-product-01;
+
+    .icon {
+      width: $line-height-160;
+      height: $line-height-160;
+    }
+  }
+
+  &:hover,
+  &.is-active,
+  &:active {
+    background-color: $neutral-100;
+  }
+
+  &:focus,
+  &:focus-within {
+    border-color: $ui-focus;
+  }
+
+  &[disabled],
+  &.is-disabled {
+    color: $ui-disabled !important;
+    cursor: not-allowed !important;
+  }
+
+  span {
+    &:first-child:not(:last-child) {
+      margin-right: $spacing-200;
+    }
+
+    &:last-child:not(:first-child) {
+      margin-left: $spacing-200;
+    }
+  }
+
+  .icon {
+    width: $line-height-210;
+    height: $line-height-210;
+    pointer-events: none;
+  }
+}
+
+.action-link--stroke {
+  @extend .ui-body-product-02;
+
+  & ~ .action-link--stroke {
+    margin-left: $spacing-200;
+  }
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-200 $spacing-400;
+  color: $text;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid $ui-stroke-light;
+  border-radius: $border-radius-rounded;
+  outline: none;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+
+  &.has-no-text {
+    padding: $spacing-400;
+  }
+
+  &.is-small {
+    @extend .ui-small-product-01;
+
+    padding: $spacing-300;
+
+    .icon {
+      width: $line-height-100;
+      height: $line-height-100;
+    }
+  }
+
+  &:hover,
+  &.is-active,
+  &:active {
+    color: $white;
+    background-color: $neutral-900;
+
+    .icon {
+      color: $white;
+    }
+  }
+
+  &:focus,
+  &:focus-within {
+    border-color: $ui-focus;
+  }
+
+  &[disabled],
+  &.is-disabled {
+    color: $ui-disabled !important;
+    cursor: not-allowed !important;
+    border-color: $ui-disabled;
+  }
+
+  span {
+    &:first-child:not(:last-child) {
+      margin-right: $spacing-200;
+    }
+
+    &:last-child:not(:first-child) {
+      margin-left: $spacing-200;
+    }
+  }
+
+  .icon {
+    width: $line-height-210;
+    height: $line-height-210;
+    color: $neutral-500;
+    pointer-events: none;
+  }
+}

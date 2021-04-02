@@ -1,0 +1,89 @@
+// Pages - Blogs - Body
+// ––––––––––––––––––––––
+
+.blogs__body {
+  position: relative;
+  grid-template-areas:
+    'body_left body_left body_left body_left'
+    'body_center body_center body_center body_center'
+    'body_bottom body_bottom body_bottom body_bottom'
+    'body_right body_right body_right body_right';
+
+  @include breakpoint-md {
+    grid-template-areas:
+      '. body_left body_left body_left body_left body_left body_left .'
+      '. body_center body_center body_center body_center body_center body_center .'
+      '. body_bottom body_bottom body_bottom body_bottom body_bottom body_bottom .'
+      '. body_right body_right body_right body_right body_right body_right .';
+  }
+
+  @include breakpoint-lg {
+    grid-template-areas:
+      'body_left body_left body_left body_center body_center body_center body_center body_center body_center body_center . .'
+      'body_left body_left body_left body_bottom body_bottom body_bottom body_bottom body_bottom body_bottom body_bottom . .'
+      'body_left body_left body_left body_right body_right body_right body_right body_right body_right body_right . .';
+  }
+
+  @include breakpoint-xl {
+    grid-template-areas:
+      'body_left body_left body_left body_center body_center body_center body_center body_center body_center body_right body_right body_right'
+      'body_left body_left body_left body_bottom body_bottom body_bottom body_bottom body_bottom body_bottom . . .';
+  }
+
+  &__center {
+    grid-area: body_center;
+
+    &__tools-top {
+      border-bottom: 1px solid $neutral-200;
+
+      @include breakpoint-until-lg {
+        margin-top: $spacing-600;
+        border-top: 1px solid $neutral-200;
+      }
+    }
+  }
+
+  &__bottom {
+    grid-area: body_bottom;
+    border-top: 1px solid $neutral-200;
+  }
+
+  &__left {
+    grid-area: body_left;
+
+    &__sticky-wrapper {
+      &.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @include breakpoint-lg {
+        position: -webkit-sticky;
+        position: sticky;
+        top: calc(#{$spacing-500} + var(--global-navigation-height));
+        opacity: 0;
+        transform: translateY(-50%);
+
+        @include onPageLoad {
+          transition-timing-function: $animation-curve-decelerate;
+          transition-duration: $animation-speed-normal;
+          transition-property: opacity, transform;
+        }
+      }
+    }
+  }
+
+  &__right {
+    grid-area: body_right;
+
+    @include breakpoint-until-xl {
+      align-self: auto;
+    }
+
+    &__teaser:not(:last-child) {
+      padding-bottom: $spacing-400;
+      margin-bottom: $spacing-400;
+      border-bottom: 1px solid $neutral-200;
+    }
+  }
+}

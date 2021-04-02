@@ -1,0 +1,21 @@
+<div class="blogs__body__right splitter is-vertical">
+  <div class="splitter__first mt-600">
+    {% include "@views/sections/common/banners/sidebar-banner.html.twig" %}
+  </div>
+  <div class="splitter__last mt-700">
+    <div class="mb-300">
+      <a href="#" class="heading-product-05 text">Pourquoi ce nouveau design ?</a>
+    </div>
+    <hr class="divider">
+    <div class="heading-product-05 mt-300 mb-500">À lire aussi</div>
+    {% for article in article.recirculations %}
+      <div class="blogs__body__right__teaser mt-400">
+        <div class="ui-label-product-01 text mb-200">
+          <span class="{{ article.category == 'ABONNÉS' ? 'text-accent' : 'text-product-accent' }}">{{ article.category }}</span>
+          <a href="#" class="ml-200">{{ article.subCategory }}</a>
+        </div>
+        <a href="#" class="{{ article.category == 'ABONNÉS' ? 'heading-news-02 ' : 'heading-product-02 ' }}text">{{ article.title }}</a>
+      </div>
+    {% endfor %}
+  </div>
+</div>

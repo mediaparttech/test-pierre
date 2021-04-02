@@ -1,0 +1,24 @@
+// Border radius
+// ––––––––––––––––––––––
+
+.border-radius {
+  &-small {
+    border-radius: $border-radius-small;
+  }
+
+  &-medium {
+    border-radius: $border-radius-medium;
+  }
+
+  &-large {
+    border-radius: $border-radius-large;
+  }
+
+  &-rounded {
+    border-radius: $border-radius-rounded;
+  }
+
+  &-circle {
+    border-radius: $border-radius-circle;
+  }
+}

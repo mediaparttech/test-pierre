@@ -1,0 +1,7 @@
+// Hack
+// ––––––––––––––––––––––
+
+// Ssend click event from [data-smarttag] not children image
+[data-smarttag] img {
+  pointer-events: none;
+}
