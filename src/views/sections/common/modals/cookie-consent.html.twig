@@ -1,0 +1,86 @@
+{# COOKIE CONSENT #}
+
+{# {% set settings = [
+    {
+        'title': "Nécessaires au fonctionnement<br>du site ou de l’application",
+        'description': "Connexion des abonné·es, mesure d’audience anonymisée, envoi des notifications push, suivi des pannes, mise en avant de nos services&nbsp;: ces outils sont nécessaires au suivi de l’activité de nos services et à leur bon fonctionnement.",
+        'more': {
+            'title': "Voici les différents cookies et technologies similaires compris dans cette catégorie&nbsp;:",
+            'list': [
+                "<b>Cookies d’authentification</b>&nbsp;: connexion des abonné·es.",
+                "<b>AT Internet</b>&nbsp;: mesure d’audience anonymisée",
+                "<b>Affichage de contenus éditoriaux multimédias</b>&nbsp;: vidéos (YouTube, Dailymotion, Vimeo, INA), réseaux sociaux (Facebook, Twitter, Instagram, Pinterest), documents (Scribd, Document Cloud, Slideshare), sons (SoundCloud, Spotify, Deezer), cartes (Google Maps, Mapbox, CartoDB, uMap), infographies (Highcharts, GitHub, Datawrapper, Flourish, Infogram, ThingLink, jQuery, Google Fonts, Bootstrap), live blogs (24liveblog, CoverItLive), aide à l’intégration de média dans les publications Journal et Club (Embedly).",
+                "<b>Typeform</b>&nbsp;: questionnaires facultatifs pour recueillir les avis des lecteurs sur nos produits numériques.",
+                "<b>Datadog (uniquement sur le site web)</b>&nbsp;: indicateurs techniques et équilibrage de charge.",
+                "<b>Selligent (uniquement sur le site web)</b>&nbsp;: communication avec l’abonné·e, mise en avant des services, offres et avantages.",
+                "<b>Batch (uniquement sur l’application)</b>&nbsp;: envoi de notifications push et de messages in-app.",
+                "<b>Firebase Cloud Messaging (uniquement sur l’application)</b>&nbsp;: nécessaire au fonctionnement des notifications push sur Android.",
+                "<b>Microsoft App Center (uniquement sur l’application)</b>&nbsp;: système de mise à jour et de suivi des pannes de l’application.",
+            ],
+        },
+        'switchName': "required",
+        'switchState': "checked disabled",
+    },
+    {
+        'title': "Statistiques",
+        'description': "Ces outils nous permettent de recueillir des statistiques de fréquentation du site et de l’application mobile pour comprendre les usages, détecter d’éventuels problèmes et optimiser l’ergonomie de nos produits.",
+        'more': {
+            'title': "Voici les outils tiers compris dans cette catégorie&nbsp;:",
+            'list': [
+                "<b>AT Internet</b>&nbsp;: mesure d’audience reliée à l’identifiant d’abonné·e.",
+                "<b>Google Analytics (uniquement sur le site web)</b>&nbsp;: mesure d’audience.",
+                "<b>CrazyEggs (uniquement sur le site web)</b>&nbsp;: analyse de parcours client.",
+            ],
+        },
+        'switchName': "visit",
+        'switchState': "",
+    },
+    {
+        'title': "Reciblage publicitaire",
+        'description': "Il n’y a pas de publicité sur Mediapart. Mais nous faisons la promotion de nos contenus et services sur d’autres sites et réseaux sociaux. Pour cela, nous utilisons les technologies mises à disposition par certains acteurs publicitaires.",
+        'more': {
+            'title': "Voici les outils tiers compris dans cette catégorie&nbsp;:",
+            'list': [
+                "<b>Gamned (uniquement sur le site web)</b>&nbsp;: ciblage d’audience sur des sites tiers pour faire la promotion de Mediapart.",
+                "<b>Facebook (uniquement sur le site web)</b>&nbsp;: ciblage d’audience sur les réseaux sociaux pour faire la promotion de Mediapart.",
+            ],
+        },
+        'switchName': "ad",
+        'switchState': "",
+    }
+] %} #}
+
+<aside id="js-cc-modal" class="cc-modal" aria-modal="true" aria-hidden="false">
+    <div class="cc-modal__content">
+
+        {# control for settings screen #}
+        <input type="checkbox" id="cc-modal-settings-toggle" name="cc-modal-settings-toggle">
+
+        {# CC landing screen #}
+        <div class="cc-modal__landing">
+            <svg width="167" height="22" viewBox="0 0 167 22" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M2.49 4.719c.2-1.561.398-2.933.602-4.243.079-.42.136-.476.225-.476.199 0 .257.169.455.476.686.978 1.769 2.82 2.768 4.3l6.106 9.908 4.908-8.097c2.082-3.153 2.825-4.325 3.568-5.666.486-.752.66-.921.8-.921.2 0 .23.082.34.84.2 1.422.314 2.958.513 4.411.77 6.449 1.742 14.351 2.281 16.22-.314-.026-.915-.057-2.056-.057-1.23 0-2.338.025-2.909.112 0-2.287-.57-8.316-.884-12.395-2.255 4.048-5.253 8.849-6.99 12.395-.199.333-.288.282-.43.026-1.909-3.88-4.938-8.931-6.707-12.365-.314 4.468-.769 10.052-.769 12.283-.486-.082-1.397-.056-1.826-.056-1.172 0-2.056.025-2.485.112.46-1.93 1.69-10.39 2.49-16.807zM30.142 10.415c0-3.936-.141-6.116-.372-6.868.57.082 1.57.082 2.486.082h6.163c.916 0 2.083.025 2.57-.17a23.178 23.178 0 00-.257 3.353c-.456-.25-1.083-.42-2.653-.558-.89-.087-2.543-.112-3.715-.112-.057 0-.083.025-.083.081v4.412c0 .082.026.113.083.113.654 0 2.826-.026 3.767-.026 1.627-.082 2.083-.112 2.454-.25-.23.946-.288 2.625-.288 3.377-.486-.307-.999-.42-2.14-.501-.8-.082-3.024-.082-3.793-.082-.057 0-.083.025-.083.082v.895c0 3.742.026 4.412.172 4.468.084.057.288.113.602.139.712.081 1.37.112 2.428.112 1.94 0 3.395-.169 4.395-.588-.314.92-.602 2.344-.686 3.127-.141.082-.544.082-1.543.082-3.312 0-5.363-.17-7.105-.17-1.282 0-2.255.026-2.684.057.115-.865.287-3.265.287-6.868v-4.187h-.005zM46.037 10.384c0-3.71-.199-5.972-.398-6.837.314.025 1.198.082 2 .082.8 0 2.37-.082 4.51-.113 4.253.026 7.277.67 9.558 2.82 1.282 1.228 2.428 3.184 2.428 6.06 0 2.876-1.34 5.108-2.742 6.474-1.543 1.367-3.71 2.82-8.36 2.82-1.058 0-2.14-.025-2.967-.112-1.512-.082-2.454-.226-4.28-.139.084-1.033.256-3.209.256-6.812v-4.243h-.005zm4.112 2.902c0 2.539.027 3.296.027 3.824 0 1.146.057 1.479.198 1.617.314.25 1.544.588 2.998.588 1.711 0 3.28-.25 4.626-1.56 1.23-1.203 1.71-2.99 1.71-4.776 0-1.648-.34-3.24-1.454-4.688-1.34-1.704-3.594-2.513-6.106-2.513-.884 0-1.512.082-1.826.17-.084.055-.141.112-.141.168-.026.532-.026 1.899-.026 3.992v3.178h-.006zM68.786 10.415c0-3.378-.115-5.973-.34-6.838.34.082 1.256.057 1.941.057 1.512 0 2.485-.057 2.8-.138-.084.977-.257 3.546-.257 6.924v4.187c0 2.682.084 6.116.314 6.868a30.55 30.55 0 00-1.999-.056c-.968 0-2.339.082-2.71.082.141-1.003.256-3.91.256-6.894v-4.192h-.005zM82.17 17.197c-.084 0-.115.025-.115.081a40.023 40.023 0 00-1.486 4.187c-.43-.026-.885-.056-1.826-.056-1.14 0-2.056.056-2.397.082.686-1.254 1.711-3.353 3.28-6.475l4.882-10.522c.545-1.034.686-1.285.885-1.285.198 0 .34.194.884 1.285.371.808 3.024 6.029 5.452 10.722 1.23 2.482 2.595 5.195 3.453 6.254-.916-.025-1.769-.056-2.114-.056-1.172 0-2.537.056-3.081.082-.456-1.09-1.314-3.097-1.858-4.218 0-.056-.026-.081-.115-.081H82.17zm4.876-2.513c.058 0 .084-.026.058-.113L84.99 9.796 82.99 14.57c-.026.082 0 .113.058.113h3.997zM98.149 10.415c0-3.378-.084-5.86-.288-6.837.429.081.884.056 1.653.056 1.256 0 2.313-.113 4.107-.113 3.37 0 5.049.614 6.336 1.648.77.64 1.57 1.843 1.57 3.516 0 3.685-3.28 5.81-7.163 5.722-.115-.42-.429-1.479-.628-2.011 1.968-.138 3.768-.896 3.768-3.265 0-1.229-.372-2.012-1.026-2.539-.654-.589-1.454-.947-2.967-.947-.34 0-.884.026-1.083.113-.115.025-.141.056-.141.532v8.404c0 2.682.141 5.584.288 6.781a43.835 43.835 0 00-2.171-.056c-.8 0-2.172.082-2.538.082.141-1.06.288-3.936.288-6.894v-4.192h-.005zM116.816 17.197c-.083 0-.115.025-.115.081a40.05 40.05 0 00-1.486 4.187c-.429-.026-.884-.056-1.826-.056-1.14 0-2.056.056-2.396.082.686-1.254 1.711-3.353 3.281-6.475l4.881-10.522c.544-1.034.686-1.285.884-1.285.199 0 .341.194.885 1.285.371.808 3.024 6.029 5.451 10.722 1.23 2.482 2.596 5.195 3.454 6.254-.916-.025-1.769-.056-2.114-.056-1.172 0-2.538.056-3.082.082-.455-1.09-1.313-3.097-1.857-4.218 0-.056-.026-.081-.115-.081h-5.845zm4.877-2.513c.057 0 .083-.026.057-.113l-2.113-4.775-1.999 4.775c-.026.082 0 .113.057.113h3.998zM132.884 10.415c0-3.378-.057-5.834-.371-6.868.654.056 1.282.082 1.941.082.397 0 2.998-.113 4.138-.113 2.371 0 3.966.307 5.023.865 1.34.67 2.512 2.011 2.512 4.048 0 1.9-1.172 3.573-3.114 4.775 1.397 1.925 3.056 4.162 4.652 5.917 1.172 1.254 1.998 1.98 2.537 2.231-.512.226-1.857.282-2.851.282-1.884 0-2.684-.39-3.453-1.146-1.512-1.341-3.48-4.689-4.338-5.835-.057-.082-.141-.138-.287-.138h-2.255c-.058 0-.084.025-.084.112v.558c0 2.682.115 5.052.314 6.28a33.882 33.882 0 00-1.941-.056c-.827 0-2.282.082-2.742.082.141-1.116.314-3.91.314-6.894v-4.182h.005zm4.05 1.31c0 .226 0 .251.084.282.429.194 1.313.25 2.427.25.628 0 1.057-.081 1.282-.25.685-.445 1.339-1.254 1.339-2.682 0-2.538-1.998-3.547-3.74-3.547-.571 0-1.115.026-1.314.113-.057.025-.083.082-.083.169v5.665h.005zM149.119 3.322c.77.225 1.999.307 4.369.307h8.56c1.826 0 3.709-.113 4.28-.251-.257 1.116-.372 2.456-.398 3.547-.544-.364-1.428-.558-2.825-.67-.942-.083-1.884-.113-3.71-.113v8.403c0 2.708.173 5.753.314 6.925a30.548 30.548 0 00-1.857-.056c-1.23 0-2.313.056-2.852.082.142-1.034.257-3.91.257-6.894v-8.46c-1.026 0-1.628-.026-3.223.056-1.999.138-2.569.225-3.511.532.225-.727.513-2.513.596-3.408z" fill="#000000"/>
+            </svg>
+            <p class="cc-modal__heading">Votre choix pour vos données</p>
+            <p class="cc-modal__text">
+                Pour mettre le site et l’application mobile de Mediapart à votre disposition nous utilisons des cookies ou technologies similaires qui nous permettent de collecter des informations sur votre appareil.
+                <br><br>
+                Certaines de ces technologies sont nécessaires pour faire fonctionner nos services correctement&nbsp;: vous ne pouvez pas les refuser. D’autres sont optionnelles mais contribuent à faciliter votre expérience de lecteur ou de lectrice et d’une certaine façon à soutenir Mediapart&nbsp;: vous pouvez à tout moment donner ou retirer votre consentement.
+                <br><br>
+                <b>Acceptez-vous que Mediapart emploie des cookies ou technologies similaires utiles à son fonctionnement&nbsp;?</b>
+            </p>
+            <div class="cc-modal__landing__buttons">
+                <button id="js-cc-modal-deny" class="cc-modal__button">Refuser</button>
+                <button id="js-cc-modal-allow" class="cc-modal__button">Accepter</button>
+            </div>
+            <div class="cc-modal__landing__footer">
+                <label for="cc-modal-settings-toggle" tabindex="0">Affiner mes choix</label>
+            </div>
+        </div>
+
+        {# CC settings screen #}
+        <div class="cc-modal__settings">
+
+        </div>
+    </div>
+</aside>
